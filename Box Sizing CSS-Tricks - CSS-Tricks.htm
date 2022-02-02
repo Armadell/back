@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html id="top-of-site" class="js jetpack-lazy-images-js-enabled" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Box Sizing | CSS-Tricks - CSS-Tricks</title>
+<link rel="icon" href="https://css-tricks.com/favicon.ico" sizes="any">
+<link rel="icon" href="https://css-tricks.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://css-tricks.com/apple-touch-icon.png">
+<link rel="manifest" href="https://css-tricks.com/manifest.webmanifest">
+<meta name="theme-color" content="#ff7a18">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+<link rel="search" type="application/opensearchdescription+xml" href="https://css-tricks.com/opensearch.xml" title="CSS-Tricks Search">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://css-tricks.com/feed/">
+<link rel="preconnect" href="https://s3.buysellads.com/">
+<link rel="dns-prefetch" href="https://s3.buysellads.com/">
+<link rel="preconnect" href="https://srv.buysellads.com/">
+<link rel="dns-prefetch" href="https://srv.buysellads.com/">
+<link rel="preconnect" href="https://res.cloudinary.com/">
+<link rel="dns-prefetch" href="https://res.cloudinary.com/">
+<link rel="preconnect" href="https://static.codepen.io/">
+<link rel="dns-prefetch" href="https://static.codepen.io/">
+<style id="jetpack-boost-critical-css" media="not all">@media all{@charset "UTF-8";*{box-sizing:border-box}a{text-decoration:none}article,header,nav{display:block}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0}body,html,ol,ul{margin:0}ol,ul{padding:0}nav ul{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}input,textarea{font-size:100%;margin:0;vertical-align:baseline}input{line-height:normal}textarea{overflow:auto;vertical-align:top}@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@font-face{font-family:MD Primer Bold;font-weight:700}@font-face{font-family:Blanco;font-weight:400}@font-face{font-family:Blanco;font-weight:700}@font-face{font-family:Blanco;font-style:italic}@font-face{font-family:Blanco;font-weight:700;font-style:italic}html{font-family:Blanco,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:clamp(12px,calc(.8rem + .25vw),20px);font-weight:400;line-height:1.7}a{color:#0089c7}.article-title{font-size:clamp(1.2rem,calc(1rem + 3.5vw),4rem);text-shadow:0 2px 2px rgba(0,0,0,.5)}h1,h3,h4{font-weight:800;margin:0 0 1.5rem;line-height:1.1}h3 a{color:inherit}h1{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-size:clamp(2rem,calc(2rem + 1.2vw),3rem);font-weight:700}h3{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-weight:700;font-size:2rem;letter-spacing:.03rem;font-weight:800}body:not(.page-id-21059):not(.parent-pageid-3222):not(.postid-181375):not(.postid-199370):not(.woocommerce-checkout) .article-content h3{margin-top:100px}body:not(.page-id-21059):not(.parent-pageid-3222):not(.postid-181375):not(.postid-199370):not(.woocommerce-checkout) .article-content h3 a{color:#0089c7}.aal_anchor{margin-left:-21px;margin-right:5px;position:relative;scroll-margin-top:100px;opacity:.33}.aal_anchor:before{content:"";position:absolute;width:100px;height:100px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.aal_anchor svg{position:relative}h4{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-weight:700;font-size:1.5rem;margin:0 0 .8rem}h4{line-height:1.05}.article-content li,.article-content p{max-width:700px}.article-content ol,.article-content ul{margin:0 0 1.5rem 1.5rem}.article-content ol li,.article-content ul li{line-height:1.6}.article-content ul li>*{text-indent:0}.article-content li{margin:0 0 5px}strong{font-weight:700}blockquote{font-size:1.3rem;letter-spacing:-.02rem;margin:1.5rem 0;padding:0 0 0 3rem;position:relative;font-style:italic}.article-content blockquote>*{hanging-punctuation:first}.article-content blockquote>:first-child:before{content:"\0022";width:100px;opacity:.15;font-size:100px;line-height:.85;position:absolute;left:-1rem}@media (max-width:800px){.article-content blockquote>:first-child:before{font-size:90px;left:-1.2rem}}blockquote p{margin:0 0 .25rem}blockquote p:last-child{margin:0}blockquote,blockquote p{max-width:900px}p,pre{margin:0 0 1.5rem}pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;clear:both;color:#fff;background:#1b1b1b;padding:0;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-ms-word-break:normal;word-break:normal;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;line-height:28px;border-radius:8px;overflow:hidden}pre[rel]:not([rel=""]):before{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-weight:700;font-size:.5rem;content:attr(rel);color:#fff;position:absolute;top:-.2rem;right:.4rem;padding:0;color:#ff7a18!important}pre code{scrollbar-color:#666 #201c29;background:0 0;white-space:pre;-webkit-overflow-scrolling:touch;overflow-x:scroll;display:block;max-width:100%;min-width:100px;font-size:16px;padding:15px 20px 12px 22px;line-height:1.75}pre code::-webkit-scrollbar{width:.5em;height:.5em}@media (max-width:800px){pre code{font-size:11px;padding:15px 20px 10px 14px}}code{font-size:inherit;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}li:not(.comment):not([data-category])>code,p>code{overflow-wrap:break-word;word-wrap:break-word;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:.1rem .3rem .2rem;border-radius:.2rem;font-size:88%}.screen-reader-text{position:absolute!important;clip:rect(1px,1px,1px,1px);width:1px;height:1px;overflow:hidden}p:empty{display:none}.language-javascript{color:#f5d67b}.button{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;background-color:#5e5e5e!important;color:#fff!important;border:0;border-bottom:1px solid #262626;border-right:1px solid #262626;box-shadow:inset 1px 1px 0 #777,0 2px 3px rgba(0,0,0,.4);display:inline-block;font-weight:700;line-height:1.4;text-transform:uppercase;text-decoration:none!important;border-radius:4px!important;white-space:nowrap;padding:1rem 1.5rem;text-align:center;position:relative}input[type=text],textarea{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;background:#eaeaea;border:1px solid #d4d4d4!important;padding:.5rem;border-radius:4px;border:0;width:100%}textarea{padding:1rem;display:block}html{--maxWidth:1600px;--gap:3rem;scrollbar-color:#666 #201c29;background:radial-gradient(900px 900px at top center,#5e5e5e,#2d3334,#262626);background-repeat:no-repeat;color:#fff;overflow-x:hidden}html::-webkit-scrollbar{width:16px;height:16px}@media (max-width:1200px){html{--gap:2rem}}@media (max-width:800px){html{--gap:1rem}}#top-of-site-pixel-anchor{position:absolute;width:1px;height:1px;top:500px;left:0}@media (max-width:800px){#top-of-site-pixel-anchor{top:46px}}.mega-header,.page-wrap{max-width:var(--maxWidth);margin:0 auto;padding:0 var(--gap)}main{position:relative;z-index:1}.articles-and-sidebar{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--gap);margin:0 auto}.articles-and-sidebar>:not(.sidebar){align-self:start}@media (max-width:800px){.articles-and-sidebar{display:block;padding-top:0}}.articles-and-sidebar.single-mini{display:block}.articles-and-sidebar.single-mini .sidebar{display:none}.articles-and-sidebar.single-mini .article-content{font-size:1.5rem}@media (max-width:800px){.articles-and-sidebar.single-mini .article-content{font-size:1.2rem}}@media (max-width:800px){.sidebar{display:none}}img{max-width:100%}.site-header{position:relative;z-index:2;display:flex;padding:0 var(--gap);margin:0 0 var(--gap) 0;background-color:#111;background-image:paint(fleck);border-bottom:1px solid #676767}.site-header .logo{flex:0;position:relative;align-self:stretch}.site-header .logo,.site-header .logo>a{display:flex;align-items:center}.site-header .icon-logo-star{fill:#fff;width:25px;height:25px;margin:0 .5rem 0 0}.site-header .icon-logo-text{fill:#fff;height:25px;width:170px;margin-right:var(--gap)}.site-header .header-middle-area{flex:1;width:100%}.site-header .main-nav>ul{display:flex;height:100%}.site-header .main-nav>ul>li>a{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-weight:700;text-transform:uppercase;font-weight:500;font-size:.8rem;height:100%;color:#fff;padding:1.2rem 1rem;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden}@media (max-width:1000px){.site-header{padding:20px 20px 0;flex-wrap:wrap}.site-header .header-middle-area{flex:0 0 100%}.site-header .main-nav{padding-top:10px;-webkit-margin-start:-10px;margin-inline-start:-10px}.site-header .main-nav>ul>li>a{padding:.6rem .8rem;border-top-right-radius:4px;border-top-left-radius:4px}.site-header .icon-logo-star{width:18px;height:18px}.site-header .icon-logo-text{height:15px;width:116px}}@media (max-width:620px){.site-header{padding-top:15px}.site-header .main-nav{width:calc(100% + var(--gap)*2);overflow:auto}}.search-and-account{position:fixed;z-index:15;top:.9rem;right:var(--gap)}.search-and-account svg{width:32px;height:32px}@media (max-width:620px){.search-and-account{top:.95rem}.search-and-account svg{width:28px;height:28px}}.search-and-account a{margin-left:.5rem}.search-and-account a svg{-webkit-filter:drop-shadow(0 2px 5px rgba(0,0,0,.3));filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}.top-of-site-link{visibility:hidden;opacity:0;position:fixed;bottom:1.2rem;right:1.5rem;z-index:15}.top-of-site-link svg{-webkit-filter:drop-shadow(0 2px 5px rgba(0,0,0,.3));filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}.article-sponsor{padding:1rem 1.5rem calc(1rem + 10px);margin-bottom:-10px;border-radius:8px;background:rgba(0,0,0,.2)}.article-sponsor p{margin:0}.article-sponsor a{color:#fff;font-weight:700;position:relative;display:inline-block;line-height:1.2}.article-sponsor a:before{content:"";position:absolute;top:100%;width:100%;left:0;height:3px;border-radius:2px;background:linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%)}.article-content{font-size:1.2rem;background:#fff;color:#000;overflow-wrap:break-word;border-radius:8px;padding:4rem;position:relative}@media (max-width:800px){.article-content{padding:1.66rem}}.article-content a{text-decoration:underline;-webkit-text-decoration-color:#a2dffb;text-decoration-color:#a2dffb}.article-content img{max-width:100%;height:auto!important}figure>img{display:block}.mega-header{position:relative;z-index:1;overflow:hidden;padding:0 0 2rem}.mega-header .tags a{color:#ffdfc7}.mega-header .author-name,.mega-header .author-row{color:#fff}.jp-relatedposts{margin-bottom:1rem}.author-row{-webkit-margin-before:auto;margin-block-start:auto;display:grid;grid-template-columns:40px 1fr;gap:.5rem;align-items:center;color:#565656;line-height:1.3;padding-top:.5rem}.author-row>div>*{white-space:nowrap}.avatar{width:40px;height:40px;border-radius:50%;margin-right:.5rem}.author-name{font-weight:700;color:#000}.tags{line-height:1;margin:0 0 .5rem}.tags a{font-family:MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;font-style:normal;font-weight:700;text-transform:uppercase;color:#ff7a18;font-size:.66rem;-webkit-margin-end:.66rem;margin-inline-end:.66rem}.CommentForm .comment-wrap .author-avatar,.comment ul .comment-wrap .author-avatar,.commentlist .comment-wrap .author-avatar{margin:0;align-self:start;grid-area:auto}#commentform label{display:block}#commentform .comment-notes,#commentform .required{display:none}#commentform p{margin-bottom:.5rem}.bsap-doubles.side-by-side{margin-top:var(--gap)}#all-modules{height:100%}#scroll-ad-position{width:1px;height:1px}#sticky-sidebar-stuff{position:-webkit-sticky;position:sticky;top:2.5rem;opacity:0;visibility:hidden}@media (max-width:620px){#sticky-sidebar-stuff{top:89px}}.fem-ad{background:#1f1f1f;color:#fff;border-radius:8px;position:relative}.fem-ad:before{content:"";background:linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);position:absolute;top:-5px;left:-5px;width:calc(100% + 10px);height:calc(100% + 10px);z-index:-1;border-radius:12px}.fem-ad h4{font-size:1.2rem}.fem-ad .fem-learning-partner{font-size:.75rem;color:#fff;text-transform:uppercase;letter-spacing:.13rem;text-align:center;margin:0 0 .5rem}.fem-ad .fem-header-inner{background:rgba(0,0,0,.7);padding:1rem;border-radius:7px}.fem-ad .fem-title{text-align:center}.fem-ad .fem-logo{width:200px;display:block;margin:0 auto}.fem-ad .fem-message{background:#eaeaea;border-bottom-left-radius:7px;border-bottom-right-radius:7px;color:#000;padding:1.5rem;font-size:.85rem}.fem-ad .fem-message p{margin:0}.fem-footer-ad{margin:var(--gap) 0 var(--gap) 0;display:grid;grid-template-columns:1fr 2fr}@media (max-width:1200px){.fem-footer-ad{grid-template-columns:4fr 3fr}}@media (max-width:800px){.fem-footer-ad{display:block}.fem-footer-ad .fem-header-inner{height:auto}}.fem-footer-ad .fem-header-inner{padding:4rem 1.5rem;display:grid;place-items:center}.single-almanac-content .almanac-sidebar{grid-area:1/1/2/2;background:#111;border-radius:8px;padding:1rem}.single-almanac-content .article-content-wrap{grid-area:1/2/2/3}.single-almanac-content .sidebar{grid-area:1/3/2/4}@media (max-width:650px){.single-almanac-content .article-content-wrap{grid-area:1/1/2/2;min-width:0}.single-almanac-content .almanac-sidebar{grid-area:2/1/3/2}}@media screen and (max-width:400px){@-ms-viewport{width:320px}}}@media all{#jp-relatedposts{display:none;padding-top:1em;margin:1em 0;position:relative;clear:both}.jp-relatedposts:after{content:'';display:block;clear:both}}</style>
+
+<meta name="description" content="The box-sizing property can make building CSS layouts easier and a lot more intuitive. It's such a boon for developers that here at CSS-Tricks we observe">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://css-tricks.com/box-sizing/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Box Sizing | CSS-Tricks">
+<meta property="og:description" content="The box-sizing property can make building CSS layouts easier and a lot more intuitive. It's such a boon for developers that here at CSS-Tricks we observe">
+<meta property="og:url" content="https://css-tricks.com/box-sizing/">
+<meta property="og:site_name" content="CSS-Tricks">
+<meta property="article:publisher" content="https://www.facebook.com/CSSTricks">
+<meta property="article:tag" content="CSS">
+<meta property="article:section" content="Advanced">
+<meta property="og:updated_time" content="2015-05-06T12:00:05-07:00">
+<meta property="og:image" content="https://css-tricks.com/wp-json/social-image-generator/v1/image/7323">
+<meta property="og:image:alt" content="Box Sizing">
+<meta property="article:published_time" content="2010-09-10T06:24:46-07:00">
+<meta property="article:modified_time" content="2015-05-06T12:00:05-07:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Box Sizing | CSS-Tricks">
+<meta name="twitter:description" content="The box-sizing property can make building CSS layouts easier and a lot more intuitive. It's such a boon for developers that here at CSS-Tricks we observe">
+<meta name="twitter:site" content="@CSS">
+<meta name="twitter:creator" content="@mmosley">
+<meta name="twitter:image" content="https://css-tricks.com/wp-json/social-image-generator/v1/image/7323">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Marie Mosley">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="Less than a minute">
+
+<link rel="dns-prefetch" href="https://stats.wp.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="CSS-Tricks » Box Sizing Comments Feed" href="https://css-tricks.com/box-sizing/feed/">
+<noscript><link rel='stylesheet' id='css-tricks-style-css'  href='https://css-tricks.com/wp-content/themes/CSS-Tricks-19/style.css?ver=cache_bust=1641416079722' type='text/css' media='all' />
+</noscript><link rel="stylesheet" id="css-tricks-style-css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/style.css" type="text/css" media="all">
+<noscript><link rel='stylesheet' id='mediaelement-css'  href='https://c0.wp.com/c/5.8.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media='all' />
+</noscript><link rel="stylesheet" id="mediaelement-css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/mediaelementplayer-legacy.css" type="text/css" media="all">
+<noscript><link rel='stylesheet' id='wp-mediaelement-css'  href='https://c0.wp.com/c/5.8.3/wp-includes/js/mediaelement/wp-mediaelement.min.css' type='text/css' media='all' />
+</noscript><link rel="stylesheet" id="wp-mediaelement-css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/wp-mediaelement.css" type="text/css" media="all">
+<noscript><link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='https://c0.wp.com/p/woocommerce/6.1.0/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css' type='text/css' media='all' />
+</noscript><link rel="stylesheet" id="wc-blocks-vendors-style-css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/wc-blocks-vendors-style.css" type="text/css" media="all">
+<noscript><link rel='stylesheet' id='wc-blocks-style-css'  href='https://c0.wp.com/p/woocommerce/6.1.0/packages/woocommerce-blocks/build/wc-blocks-style.css' type='text/css' media='all' />
+</noscript><link rel="stylesheet" id="wc-blocks-style-css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/wc-blocks-style.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="https://api.w.org/" href="https://css-tricks.com/wp-json/"><link rel="alternate" type="application/json" href="https://css-tricks.com/wp-json/wp/v2/posts/7323"><link rel="shortlink" href="https://css-tricks.com/?p=7323">
+<link rel="alternate" type="application/json+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fbox-sizing%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fbox-sizing%2F&amp;format=xml">
+
+
+<meta property="og:image" content="https://css-tricks.com/wp-json/social-image-generator/v1/image/7323">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://css-tricks.com/wp-json/social-image-generator/v1/image/7323">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="jetpack-boost-ready" content="true">
+<style type="text/css">img#wpstats{display:none}</style>
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+<link rel="icon" href="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
+<link rel="icon" href="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=180%2C180&amp;ssl=1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=180%2C180&amp;ssl=1">
+<meta name="msapplication-TileImage" content="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/07/star.png?fit=180%2C180&amp;ssl=1">
+<script async="" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/analytics.js"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed, .fluid-width-video-wrapper video {position:absolute;top:0;left:0;width:100%;height:100% !important;}</style><link rel="stylesheet" type="text/css" href="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/jp-search.css"><script id="_carbonads_projs" type="text/javascript" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/CK7DK2QU.json"></script><script async="" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/bsa.js"></script><script type="text/javascript" id="_bsap_js_3469a2a501a9e18091036aa0c89f9dcb" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/s_3469a2a501a9e18091036aa0c89f9dcb.js" async="async"></script><script type="text/javascript" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/pro.js" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/a" async="async"></script><link rel="prefetch" href="https://css-tricks.com/international-box-sizing-awareness-day/"></head>
+<body class="post-template-default single single-post postid-7323 single-format-standard theme-CSS-Tricks-19 woocommerce-js jps-theme-CSS-Tricks-19 category-advanced category-article">
+<div id="top-of-site-pixel-anchor"></div>
+<header class="site-header" id="site-header">
+<a id="skip-nav" class="skip-nav screen-reader-text" href="#maincontent">Skip to main content</a>
+<div class="logo">
+<a href="https://css-tricks.com/">
+<div class="screen-reader-text">CSS-Tricks</div>
+<svg class="icon-logo-star" width="35px" height="35px" viewBox="0 0 362.62 388.52" data-spin-me="false">
+<path d="M156.58,239l-88.3,64.75c-10.59,7.06-18.84,11.77-29.43,11.77-21.19,0-38.85-18.84-38.85-40C0,257.83,14.13,244.88,27.08,239l103.6-44.74L27.08,148.34C13,142.46,0,129.51,0,111.85,0,90.66,18.84,73,40,73c10.6,0,17.66,3.53,28.25,11.77l88.3,64.75L144.81,44.74C141.28,20,157.76,0,181.31,0s40,18.84,36.5,43.56L206,149.52l88.3-64.75C304.93,76.53,313.17,73,323.77,73a39.2,39.2,0,0,1,38.85,38.85c0,18.84-12.95,30.61-27.08,36.5L231.93,194.26,335.54,239c14.13,5.88,27.08,18.83,27.08,37.67,0,21.19-18.84,38.85-40,38.85-9.42,0-17.66-4.71-28.26-11.77L206,239l11.77,104.78c3.53,24.72-12.95,44.74-36.5,44.74s-40-18.84-36.5-43.56Z"></path>
+</svg>
+<svg class="icon-logo-text" width="214px" height="35px" viewBox="0 0 474.15 58.26">
+<path d="M46 42.57a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20v-.09c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.48 5.03 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94c-4.91-3.79-10.62-6.36-19.35-6.36-17 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.54 4.71 4.71 0 0 0-4.68-4.62zm36.86-17.95c-10.86-2.62-13.43-4.5-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.43 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.91-5.22c-11.18 0-19.23 6.68-19.23 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.73 4.58 12.73 8.6v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.94 3.77 35.05 35.05 0 0 0 21.16 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.34-6.11-13.6-18.02-16.5zm49.88 0c-10.86-2.57-13.43-4.51-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.91-5.22c-11.18 0-19.23 6.68-19.23 16.33v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.77 35.05 35.05 0 0 0 21.16 7.08c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.32-6.11-13.58-18.02-16.48zm45.62 3.22h-15.13a4.79 4.79 0 0 0 0 9.58h15.12a4.79 4.79 0 0 0 0-9.58zm45.64-26.84h-37.45a4.59 4.59 0 0 0 0 9.17h13.68v42.62a5 5 0 0 0 10 0v-42.65h13.77a4.59 4.59 0 0 0 0-9.14zm38.86 0h-20.15a4.91 4.91 0 0 0-5 5v46.79a4.95 4.95 0 0 0 9.89 0v-15.13h12.47l13.68 17.46a5.65 5.65 0 0 0 4.83 2.58 4.67 4.67 0 0 0 4.75-4.59 5.74 5.74 0 0 0-1.61-3.78l-10.78-13.6c7.56-2.33 12.79-7.81 12.79-16.82v-.16a17 17 0 0 0-4.66-12.15c-3.62-3.54-9.17-5.6-16.25-5.6zm10.86 18.51c0 5.71-4.51 9.41-11.58 9.41h-14.53v-18.92h14.39c7.32 0 11.67 3.3 11.67 9.33zm27-18.91a4.89 4.89 0 0 0-5 4.91v47.28a4.95 4.95 0 0 0 9.89 0v-47.32a4.88 4.88 0 0 0-4.98-4.91zm62.67 42a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20v-.12c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.44 5.07 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94c-4.98-3.83-10.7-6.4-19.38-6.4-17.06 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.58 4.71 4.71 0 0 0-4.7-4.58zm41-16.82l17.54-16.9a4.81 4.81 0 0 0 1.77-3.7 4.53 4.53 0 0 0-4.7-4.62 5.2 5.2 0 0 0-4.1 1.85l-26.66 26.88v-23.82a4.95 4.95 0 0 0-9.9 0v47.32a4.95 4.95 0 0 0 9.9 0v-11.67l9.17-8.85 18.1 23.09a5 5 0 0 0 4.18 2.33 4.83 4.83 0 0 0 5-4.83 5.36 5.36 0 0 0-1.37-3.54zm51.8-1.13c-10.92-2.65-13.49-4.53-13.49-8.88v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.94-5.22c-11.15 0-19.2 6.68-19.2 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.76 35.05 35.05 0 0 0 21.12 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c.04-9.34-6.11-13.6-17.98-16.5z"></path>
+</svg> </a>
+</div>
+<div class="header-middle-area">
+<nav class="main-nav" id="main-nav">
+<ul>
+<li class="articles">
+<a href="https://css-tricks.com/archives/">
+<span>Articles</span>
+</a>
+</li>
+<li class="videos">
+<a href="https://css-tricks.com/video-screencasts/">
+<span>Videos</span>
+</a>
+</li>
+<li class="almanac">
+<a href="https://css-tricks.com/almanac/">
+<span>Almanac</span>
+</a>
+</li>
+<li class="newsletter">
+<a href="https://css-tricks.com/newsletters/">
+<span>Newsletter</span>
+</a>
+</li>
+<li class="guides">
+<a href="https://css-tricks.com/guides/">
+<span>Guides</span>
+</a>
+</li>
+<li class="books">
+<a href="https://css-tricks.com/books/">
+<span>Books</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class="search-and-account">
+<a href="https://www.google.com/search?q=site:css-tricks.com%20layout" class="jetpack-search-filter__link">
+<span class="screen-reader-text">Search</span>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.0726 10.4326C12.4801 10.4326 10.4 12.5451 10.4 15.1053C10.4 17.6978 12.5125 19.7779 15.0726 19.7779C17.6651 19.7779 19.7453 17.6654 19.7453 15.1053C19.744 12.544 17.664 10.4326 15.0726 10.4326Z" fill="white"></path>
+<path d="M16.0327 0.447479C7.42401 0.447479 0.447693 7.4238 0.447693 16.0324C0.447693 24.6398 7.42401 31.6161 16.0314 31.6161C24.64 31.6161 31.6163 24.6398 31.6163 16.0324C31.6163 7.4238 24.64 0.447479 16.0327 0.447479ZM23.6163 24.0324C23.3926 24.2562 23.0401 24.385 22.6563 24.385C22.2726 24.385 21.9526 24.2575 21.6963 24.0324L18.7526 21.0887L18.4651 21.2487C17.4088 21.825 16.2576 22.145 15.0724 22.145C11.1998 22.145 8.06509 19.0087 8.06509 15.1376C8.06509 11.265 11.2013 8.13023 15.0724 8.13023C18.9451 8.13023 22.0798 11.2665 22.0798 15.1376C22.0798 16.5138 21.6961 17.8251 20.9273 18.9776L20.7348 19.2976L23.6473 22.2101C23.8711 22.4664 24.0311 22.7864 24.0311 23.1376C23.9998 23.4563 23.8723 23.7763 23.616 24.0326L23.6163 24.0324Z" fill="white"></path>
+</svg>
+</a>
+<a href="https://css-tricks.com/product/membership/">
+<span class="screen-reader-text">Account</span>
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1.7C11.5335 1.7 6.48243 4.61655 3.74917 9.35C1.0172 14.0835 1.0172 19.9165 3.74917 24.65C6.48246 29.3835 11.5335 32.3 17 32.3C20.4918 32.3133 23.8809 31.1193 26.5917 28.9199C29.9014 26.2557 31.9559 22.3365 32.2602 18.0984C32.5657 13.8603 31.0954 9.68748 28.2003 6.57682C25.3063 3.46636 21.249 1.69986 17.0003 1.69986L17 1.7ZM27.9956 24.411C27.2651 22.1412 25.014 20.2514 21.9925 19.2447C20.7069 20.6405 18.8967 21.4361 17 21.4361C15.1021 21.4347 13.292 20.6405 12.0074 19.2447C8.98463 20.2514 6.73335 22.1413 6.00439 24.411C4.20212 21.7388 3.43579 18.5008 3.8475 15.3041C4.25921 12.1073 5.82242 9.17082 8.24234 7.04174C10.6622 4.91276 13.7752 3.7387 16.9987 3.7387C20.2221 3.7387 23.3353 4.91276 25.7564 7.04041C28.1763 9.16939 29.7395 12.1057 30.1513 15.3027C30.563 18.4995 29.7966 21.7376 27.9957 24.411L27.9956 24.411Z" fill="white"></path>
+<path d="M22.5049 13.6092C22.5049 16.9919 20.0399 19.736 17 19.736C13.9586 19.736 11.4937 16.9921 11.4937 13.6092C11.4937 10.2251 13.9587 7.48236 17 7.48236C20.0401 7.48236 22.5049 10.2249 22.5049 13.6092Z" fill="white"></path>
+</svg>
+</a>
+</div>
+</div>
+</header>
+<div class="page-wrap">
+<div class="articles-and-sidebar ">
+<main id="post-7323">
+<article>
+<header class="mega-header">
+<div class="tags">
+<a href="https://css-tricks.com/tag/css/" rel="tag">CSS</a> </div>
+<h1 class="article-title">
+Box Sizing </h1>
+<div class="author-row">
+<a href="https://css-tricks.com/author/mjmoze/" aria-label="Author page of Marie Mosley">
+<img alt="Avatar of Marie Mosley" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/4fad24b3cf4fc4b3d643f6b8bceb4bae.jpg" srcset="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/4fad24b3cf4fc4b3d643f6b8bceb4bae_002.jpg 2x" class="avatar avatar-80 photo skip-lazy" loading="lazy" width="80" height="80"><noscript><img alt='Avatar of Marie Mosley' src='https://secure.gravatar.com/avatar/4fad24b3cf4fc4b3d643f6b8bceb4bae?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/4fad24b3cf4fc4b3d643f6b8bceb4bae?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo skip-lazy' height='80' width='80' loading='lazy'/></noscript> </a>
+<div>
+<a class="author-name" href="https://css-tricks.com/author/mjmoze/">
+Marie Mosley </a>
+on
+<time datetime="">
+Sep 10, 2010 </time>
+(Updated on <time datetime="2015-05-06">May 6, 2015</time>)
+</div>
+</div>
+</header>
+<div class="article-sponsor">
+<p>
+<a href="https://ad.doubleclick.net/ddm/trackclk/N1224323.3091281BUYSELLADS/B25600467.324553384;dc_trk_aid=517637803;dc_trk_cid=157532779;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=">Try Mailchimp today.</a>
+<img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/B25600467.gif" alt="MailChimp Tracking Pixel">
+</p>
+</div>
+<div class="article-content">
+<p>The <code><a href="https://css-tricks.com/almanac/properties/b/box-sizing/">box-sizing</a></code>
+ property can make building CSS layouts easier and a lot more intuitive.
+ It’s such a boon for developers that here at CSS-Tricks we <a href="https://css-tricks.com/international-box-sizing-awareness-day/">observe International Box-Sizing Awareness Day</a> in February.</p>
+<p>But, how is it so helpful and beloved that it deserves its own internet holiday? Time for a little bit of CSS history.</p>
+<h3><a href="#aa-box-model-history" aria-hidden="true" class="aal_anchor" id="aa-box-model-history"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Box Model History</h3>
+<p>Since the dawn of CSS, the <a href="https://css-tricks.com/the-css-box-model/">box model</a> has worked like this by default:</p>
+<p>width + padding + border = actual visible/rendered width of an element’s box</p>
+<p>height + padding + border = actual visible/rendered height of an element’s box</p>
+<p>This can be a little counter-intuitive, since the width and height 
+you set for an element both go out the window as soon as you start 
+adding padding and borders to the element.</p>
+<p>Back in the old days of web design, early versions of Internet 
+Explorer (&lt;= IE6) handled the box model differently when it was in 
+"quirks mode". The "quirks" box model worked like this:
+width = actual visible/rendered width of an element's box
+height = actual visible/rendered height of an element's box
+The border and padding values were moved inside the element's box, 
+cutting into the width/height of the box rather than expanding it.
+</p><figure><img loading="lazy" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/widthbox.webp" alt="" title="widthbox" class="alignnone size-full wp-image-7394 jetpack-lazy-image" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?w=367&amp;ssl=1 367w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?resize=182%2C300&amp;ssl=1 182w" data-lazy-sizes="(min-width: 735px) 864px, 96vw" data-lazy-src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?resize=367%2C604&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" width="367" height="604"><noscript><img loading="lazy" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?resize=367%2C604" alt="" title="widthbox" width="367" height="604" class="alignnone size-full wp-image-7394" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?w=367&amp;ssl=1 367w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?resize=182%2C300&amp;ssl=1 182w" sizes="(min-width: 735px) 864px, 96vw" data-recalc-dims="1" /></noscript><figcaption>The
+ box at the top shows the default box model. The box at the bottom shows
+ what was once the “quirks mode” interpretation of the box model.</figcaption></figure>
+<p>Some people preferred this “quirky” interpretation of the box model 
+and considered it more intuitive. It’s a valid point. Having the actual 
+visible width of a box turn out differently from what you declared in 
+the CSS is a bit mind bending. </p>
+<p>But, in the days of fixed-width design, it wasn’t particularly 
+complicated to work with the default box model once you understood it. 
+You could do a bit of arithmetic to figure out how many pixels you 
+needed to trim off of an element’s declared width or height to 
+accommodate its padding and border. The problem for present-day 
+developers is that those absolute pixel lengths don’t translate to 
+responsive design, so the same math doesn’t apply anymore.</p>
+<p>As responsive design (or, as it was once known, “fluid” or “liquid” 
+layout) started to gain popularity, developers and designers wished for 
+an update to the box model. The great designer <a href="http://www.hicksdesign.co.uk/" rel="noopener">Jon Hicks</a>, known for his excellent fluid width designs, had this to say on the subject in the <a href="https://css-tricks.com/css-wishlist/">CSS Wishlist</a> we put together in 2008:</p>
+<blockquote>
+<p>I would love a different box model! I find it bizarre that padding 
+and border add the width of an object, and would love to be able to give
+ something like a textarea 100% width and 3px padding without worrying 
+what it’s going to do the layout. Perhaps something like padding-inside 
+as a new selector?</p>
+<p>In that vein I also wish I could specify a 100% width for an element,
+ minus a set fixed width. Again, very useful when creating fluid designs
+ with form elements!</p>
+</blockquote>
+<h3><a href="#aa-present-day-box-sizing" aria-hidden="true" class="aal_anchor" id="aa-present-day-box-sizing"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Present-Day <code>box-sizing</code></h3>
+<p>Those wishes were granted when the <code>box-sizing</code> property was introduced in CSS3. Though <code>box-sizing</code> has three possible values (<code>content-box</code>, <code>padding-box</code>, and <code>border-box</code>), the most popular value is <code>border-box</code>.</p>
+<p>Today, the current versions of all browsers use the original “width 
+or height + padding + border = actual width or height” box model. With <code>box-sizing: border-box;</code>,
+ we can change the box model to what was once the “quirky” way, where an
+ element’s specified width and height aren’t affected by padding or 
+borders. This has proven so useful in responsive design that it’s found 
+its way into reset styles.</p>
+<p>At this point you may be asking yourself, “Is it possible that Old IE did something right?” <a href="http://www.jefftk.com/p/the-revenge-of-the-ie-box-model" rel="noopener">Plenty of people think so</a>.</p>
+<h3><a href="#aa-demo" aria-hidden="true" class="aal_anchor" id="aa-demo"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Demo</h3>
+<p>This demo shows how <code>border-box</code> can help make responsive layouts more manageable. The parent <code>div</code>‘s width is 50%, and it has 3 children with different widths, padding, and margins. Click the <code>border-box</code> button to get all the children in the right place inside the parent.</p>
+<div class="cp_embed_wrapper resizable" style="height: 675px;"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " name="cp_embed_1" scrolling="no" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/970f26f621cfa3ae3eec7e2a6b0e8c97.htm" style="width: 100%; overflow: hidden; display: block; height: 100%;" title="CodePen Embed" loading="lazy" id="cp_embed_970f26f621cfa3ae3eec7e2a6b0e8c97" width="100%" height="675" frameborder="0"></iframe><div class="win-size-grip" style="touch-action: none;"></div></div>
+<h3><a href="#aa-good-better-and-probably-best-box-sizing-reset-methods" aria-hidden="true" class="aal_anchor" id="aa-good-better-and-probably-best-box-sizing-reset-methods"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Good, Better, and (Probably) Best <code>box-sizing</code> Reset Methods</h3>
+<h4><a href="#aa-the-old-border-box-reset" aria-hidden="true" class="aal_anchor" id="aa-the-old-border-box-reset"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The “Old” <code>border-box</code> Reset</h4>
+<p>The earliest <code>box-sizing: border-box;</code> reset looked like this:</p>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector">*</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This works fairly well, but it leaves out pseudo elements, which can 
+lead to some unexpected results. A revised reset that covers pseudo 
+elements quickly emerged:</p>
+<h4><a href="#aa-universal-box-sizing" aria-hidden="true" class="aal_anchor" id="aa-universal-box-sizing"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Universal Box Sizing</h4>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector">*, *<span class="token pseudo-element">:before</span>, *<span class="token pseudo-element">:after</span></span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This method selected pseudo elements as well, improving the normalizing effect of <code>border-box</code>. But, the <code>*</code> selector makes it difficult for developers to use <code>content-box</code> or <code>padding-box</code> elsewhere in the CSS. Which brings us to the current frontrunner for best practice:</p>
+<h4><a href="#aa-universal-box-sizing-with-inheritance" aria-hidden="true" class="aal_anchor" id="aa-universal-box-sizing-with-inheritance"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Universal Box Sizing with Inheritance</h4>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector">html</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">*, *<span class="token pseudo-element">:before</span>, *<span class="token pseudo-element">:after</span></span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This reset gives you more flexibility than its predecessors — you can use <code>content-box</code> or <code>padding-box</code>
+ (where supported) at will, without worrying about a universal selector 
+overriding your CSS. We went into more depth on this technique and the 
+reasoning behind it in <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">“Inheriting <code>box-sizing</code> Probably Slightly Better Best Practice”</a>. One potential gripe with it is that <code>box-sizing</code> isn’t normally inherited, so it’s specialized behavior, not quite the same as something you’d normally put in a reset.</p>
+<h3><a href="#aa-vendor-prefixes" aria-hidden="true" class="aal_anchor" id="aa-vendor-prefixes"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vendor Prefixes</h3>
+<p>Every current browser supports <code>box-sizing: border-box;</code> 
+unprefixed, so the need for vendor prefixes is fading. But, if you need 
+to support older versions of Safari (&lt; 5.1), Chrome (&lt; 10), and 
+Firefox (&lt; 29), you should include the prefixes <code>-webkit</code> and <code>-moz</code>, like this:</p>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector">html</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">-moz-box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">*, *<span class="token pseudo-element">:before</span>, *<span class="token pseudo-element">:after</span></span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-box-sizing</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
+  <span class="token property">-moz-box-sizing</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> inherit<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre>
+<h3><a href="#aa-known-issues" aria-hidden="true" class="aal_anchor" id="aa-known-issues"><svg aria-hidden="true" class="aal_svg" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Known Issues</h3>
+<p><code>box-sizing: border-box;</code> is supported in the current versions of all major browsers. The less-commonly used <code>padding-box</code> is only supported in Firefox at the moment. There’s more comprehensive information about browser support in our <code><a href="https://css-tricks.com/almanac/properties/b/box-sizing/">box-sizing</a></code> almanac entry.</p>
+<p>There are a few issues with older versions of Internet Explorer (8 and older). IE 8 doesn’t recognize <code>border-box</code> on elements with <code>min/max-width</code> or <code>min/max-height</code> (this used to affect Firefox too, but it was <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=308801" rel="noopener">fixed in 2012</a>). IE 7 and below do not recognize <code>box-sizing</code> at all, but there’s a <a href="https://github.com/Schepp/box-sizing-polyfill" rel="noopener">polyfill that can help</a>.</p>
+</div>
+</article>
+</main>
+<div class="entry-unrelated sidebar">
+<div id="all-modules"><div class="single-module single-module-MongoDB module-5">
+                  <div class="module">
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCAYICZ3JCYBD65QLCT7IP27KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">
+                      <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1641566405-BSAdsRefresh_ILLUSTRATION_600x600.png" alt="Ad for MongoDB" width="300" height="300">
+                    </a>
+                  </div>
+                  <div class="interlude">
+                    <a class="spon-title" href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsored</a>
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCAYICZ3JCYBD65QLCT7IP27KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">Run anywhere with MongoDB Atlas. Deploy in 80+ regions.</a>
+                  </div>
+                  
+                </div><div class="single-module single-module-mailchimp module-4">
+                  <div class="module">
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCTADPZ3JCYBD65QLC6BIP53KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">
+                      <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1618003998-MC_CSSTricks_Logo_600x600-3.png" alt="Ad for mailchimp" width="300" height="300">
+                    </a>
+                  </div>
+                  <div class="interlude">
+                    <a class="spon-title" href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsored</a>
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCTADPZ3JCYBD65QLC6BIP53KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">Grow sales with a smart marketing platform. Try Mailchimp today.</a>
+                  </div>
+                  <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/B25600467_002.gif" alt=""><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/skeleton.gif" alt="">
+                </div><div class="single-module single-module-DigitalOcean module-3">
+                  <div class="module">
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCYAITZ3JCYBD65QJCEBD623KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">
+                      <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1632497294-DODX3915-600x600-2.avif" alt="Ad for DigitalOcean" width="300" height="300">
+                    </a>
+                  </div>
+                  <div class="interlude">
+                    <a class="spon-title" href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsored</a>
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7LCYAITZ3JCYBD65QJCEBD623KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">DigitalOcean App Platform, a fully managed PaaS solution to build modern, cloud native apps. Try now with $100 credit.</a>
+                  </div>
+                  
+                </div><div class="single-module single-module-Couchbase module-2">
+                  <div class="module">
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7ECVYIKZ3JCYBD65QJF6SDCK7KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">
+                      <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1642445345-carbon-ad_capella-2021_-02.avif" alt="Ad for Couchbase" width="300" height="300">
+                    </a>
+                  </div>
+                  <div class="interlude">
+                    <a class="spon-title" href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsored</a>
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7ECVYIKZ3JCYBD65QJF6SDCK7KFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">Meet the new Couchbase Capella DBaaS. Blazing fast, SQL for JSON. Try now!</a>
+                  </div>
+                  
+                </div><div class="single-module single-module-Lightstep Incident Response module-1">
+                  <div class="module">
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7ICKBI6Z3JCYBD65QJF67D42QKFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">
+                      <img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1642527319-CSS-Tricks-BSA-_Buysellads_-2-_2_.avif" alt="Ad for Lightstep Incident Response" width="300" height="300">
+                    </a>
+                  </div>
+                  <div class="interlude">
+                    <a class="spon-title" href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsored</a>
+                    <a href="https://srv.buysellads.com/ads/click/x/GTND42JWCVSIL23NCA7LYKQNCE7DLK7ICKBI6Z3JCYBD65QJF67D42QKFT7I4KJECABD62Q7CASDKKJLFTS4YKQNCE7DEKJUCYYDTZDK2HUCN">Incident management platform. Bring the right people and tools together in one place. Start free.</a>
+                  </div>
+                  
+                </div>
+<div id="scroll-ad-position"></div>
+<div id="sticky-sidebar-stuff" class="showing">
+<div class="fem-conditional-message">
+<div class="fem-ad fem-sidebar-ad">
+<div class="fem-header">
+<div class="fem-header-inner">
+<div class="fem-learning-partner">
+Our Learning Partner
+</div>
+<a href="https://frontendmasters.com/learn/css/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar"><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/FEM-sidebar-CSS_ssbe8e.png" alt="Frontend Masters logo" class="fem-logo"></a>
+<div class="fem-title">
+Frontend Masters
+</div>
+</div>
+</div>
+<div class="fem-message">
+<h4>Wanna learn CSS from a course?</h4>
+<p><a href="https://frontendmasters.com/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">Frontend Masters</a> has <a href="https://frontendmasters.com/learn/css/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a full CSS learning path</a> with multiple courses depending on how you want to approach it. There is <a href="https://frontendmasters.com/courses/css-in-depth-v2/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">an in-depth course covering all of CSS</a>, <a href="https://frontendmasters.com/courses/sass/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a Sass-specific course</a>, <a href="https://frontendmasters.com/courses/css-grids-flexbox/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a course on modern layouts</a>, and <a href="https://frontendmasters.com/courses/smacss/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a course on SMACSS</a>, a approach to CSS architecture.</p>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="related-ads-comments-wrap">
+<div class="related-ads-comments">
+<div class="end-of-article-ads">
+<div class="bsap-doubles side-by-side">
+<div id="bsap_1250418" class="bsap bsap_1250418" data-serve="CV7DV5V">
+      
+      <div class="bsa_it one">
+    <!-- no ad -->
+      <div class="bsa_it_ad ad1 odd ">
+      <a target="_blank" href="https://srv.buysellads.com/ads/click/x/GTND42JWCVAD62QNCVBLYKQNCE7DL277CTAIVZ3JCYBD65QIFTYILK7KFT7I4KJECABD62Q7CASDKKJICV74YKQNCE7DEKJUCYYDTZDK2HUCN" rel="nofollow">
+      <span class="bsa_it_i">
+      <img alt="The Divi Theme" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/293805-1444204566.png" width="120" height="90">
+      </span>
+      </a>
+      <a target="_blank" href="https://srv.buysellads.com/ads/click/x/GTND42JWCVAD62QNCVBLYKQNCE7DL277CTAIVZ3JCYBD65QIFTYILK7KFT7I4KJECABD62Q7CASDKKJICV74YKQNCE7DEKJUCYYDTZDK2HUCN" rel="nofollow">
+      <span class="bsa_it_t">The Divi Theme</span>
+      <span class="bsa_it_d">Download the Ultimate WordPress Theme including our advanced Drag &amp; Drop builder</span>
+      </a>
+      <div style="clear:both"></div>
+      </div>
+    
+<script type="text/javascript" id="auto_1" class="ignoreme">if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(413766, 'CV7DV5V', '');</script>
+      <span class="bsa_it_p">
+        <a href="http://css-tricks.bsa-whitelabel.com/checkout/new/?utm_source=content-sponsor&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=">ads by BSA</a>
+      </span>
+      </div>
+
+      <script type="text/javascript" id="auto_2" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1250418); </script>
+    </div>
+</div>
+<div class="fem-conditional-message">
+<div class="fem-ad fem-footer-ad">
+<div class="fem-header">
+<div class="fem-header-inner">
+<a href="https://frontendmasters.com/learn/css/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar"><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/FEM-footer-CSS_s96vdh.png" alt="Frontend Masters logo" class="fem-logo-large"></a>
+</div>
+</div>
+<div class="fem-message">
+<div>
+<h4>Wanna learn CSS from a course?</h4>
+<p><a href="https://frontendmasters.com/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">Frontend Masters</a> has <a href="https://frontendmasters.com/learn/css/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a full CSS learning path</a> with multiple courses depending on how you want to approach it. There is <a href="https://frontendmasters.com/courses/css-in-depth-v2/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">an in-depth course covering all of CSS</a>, <a href="https://frontendmasters.com/courses/sass/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a Sass-specific course</a>, <a href="https://frontendmasters.com/courses/css-grids-flexbox/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a course on modern layouts</a>, and <a href="https://frontendmasters.com/courses/smacss/?utm_source=css-tricks&amp;utm_medium=website&amp;utm_campaign=css-tricks-tags-sidebar">a course on SMACSS</a>, a approach to CSS architecture.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="respond-area">
+<h2 class="comments-title" id="comments">
+<span>Comments</span>
+</h2>
+<ol class="commentlist" id="commentlist">
+<li class="comment even thread-even depth-1 buried" id="li-comment-82889">
+<div class="comment-wrap" id="comment-82889">
+<div class="comment-author-wrap">
+<div class="comment-author">Alexander Wassberg</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82889"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T06:31:20-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Perfect entry! Thanks!</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1 buried" id="li-comment-82890">
+<div class="comment-wrap" id="comment-82890">
+<div class="comment-author-wrap">
+<div class="comment-author">Arsalan Suzuki</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82890"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T06:31:31-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Nice useful tutorial.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82891">
+<div class="comment-wrap" id="comment-82891">
+<div class="comment-author-wrap">
+<div class="comment-author">Thomas</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82891"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T07:26:37-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Nice, didn’t know that works in IE8 – so its actually usable ;)<br>
+Unlike “decorative” CSS3 properties like text- or box shadow, box-sizing
+ will totally ruin your design if the browser doesn’t get it.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-82939">
+<div class="comment-wrap" id="comment-82939">
+<div class="comment-author-wrap">
+<div class="comment-author">esranull</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82939"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T06:25:34-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>dont say İE8, i hate him</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even depth-2" id="li-comment-83009">
+<div class="comment-wrap" id="comment-83009">
+<div class="comment-author-wrap">
+<div class="comment-author">ahmad</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83009"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T11:43:10-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>me too. I hate IE versions. Unfortunately in my country people use ie6 until 10 years later.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt depth-2" id="li-comment-82956">
+<div class="comment-wrap" id="comment-82956">
+<div class="comment-author-wrap">
+<div class="comment-author">Amit</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82956"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T19:41:33-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>So true. Thus, make sure you know your audience very well</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-82892">
+<div class="comment-wrap" id="comment-82892">
+<div class="comment-author-wrap">
+<div class="comment-author">Alan</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82892"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T07:28:08-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Fantastic tutorial, the best I have see for this subject</p>
+<p>Just to make more sense to can you change the line….</p>
+<p>“height + padding + border = actual visible/rendered width of box”</p>
+<p>think it should read – rendered “height” of box.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-82893">
+<div class="comment-wrap" id="comment-82893">
+<div class="comment-author-wrap">
+<div class="comment-author">Ivan Nikolić</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82893"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T07:47:44-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Great property to use if you work on layouts for orientation change capable devices like iPhone.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-82894">
+<div class="comment-wrap" id="comment-82894">
+<div class="comment-author-wrap">
+<div class="comment-author">Michael</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82894"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T07:50:19-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Hi,<br>
+My solution to this: never use padding. You get the same (optical) 
+effect when you set margins for inner elements. By doing that, 
+everything will be calculated and treated correctly.</p>
+<p>If you have multiple elements inside and don’t want to set margin for
+ everything, than group them in another nested div and set a margin for 
+this one, so that the parent will get a padding.</p>
+<p>Example:</p>
+<pre><code>&lt;div&gt;
+  &lt;div style="margin:10px;"&gt;
+     your content
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Of course this adds more code, but it is as safe as it can be, across all browsers and even in quirks mode.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-82908">
+<div class="comment-wrap" id="comment-82908">
+<div class="comment-author-wrap">
+<div class="comment-author">shane</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82908"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T13:39:36-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>But how would you do that with the textarea example?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even depth-2" id="li-comment-82934">
+<div class="comment-wrap" id="comment-82934">
+<div class="comment-author-wrap">
+<div class="comment-author">Cao</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82934"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T22:35:04-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Interesting take Michael, <em>but</em>, doesn’t that messes 
+backgrounds? paddings allow more background to be shown, while margins 
+cut the backgrounds right out. I guess I could work for some cases where
+ your inner element is 100% content.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt depth-2" id="li-comment-83011">
+<div class="comment-wrap" id="comment-83011">
+<div class="comment-author-wrap">
+<div class="comment-author">ahmad</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83011"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T12:04:12-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>I think wen can use this:</p>
+<p>and </p>
+<p>#parent {width:35%; padding:15%; border:3px; }<br>
+#paddingholder { padding:5%; border:2px;}<br>
+#content { width:100%; height:100px; }</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82897">
+<div class="comment-wrap" id="comment-82897">
+<div class="comment-author-wrap">
+<div class="comment-author">David</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82897"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T08:24:08-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>This is something that has always irked me.</p>
+<p>From the beginning of learning css/html I always thought it would be 
+logical that added padding would be put inside the box, not outside. It 
+still frustrates me to this day.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-82909">
+<div class="comment-wrap" id="comment-82909">
+<div class="comment-author-wrap">
+<div class="comment-author">Rick Lamers</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82909"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T14:11:53-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Same for me, man I also definitely think padding belongs to the inside of the elements it just doesn’t make any sense…</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even depth-2" id="li-comment-82930">
+<div class="comment-wrap" id="comment-82930">
+<div class="comment-author-wrap">
+<div class="comment-author">traq</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82930"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T21:35:56-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>the one thing that IE got right, the spec got wrong… c’est la vie</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82898">
+<div class="comment-wrap" id="comment-82898">
+<div class="comment-author-wrap">
+<div class="comment-author">Jason Evers</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82898"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T08:43:25-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Ya just blew my mind, yo.</p>
+<p>*boom*</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82899">
+<div class="comment-wrap" id="comment-82899">
+<div class="comment-author-wrap">
+<div class="comment-author">Thiago</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82899"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T08:47:08-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Great article! I’m from Brazil, I’ve been following your works for a 
+while and I’m always learning new things from you, congratulations.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82901">
+<div class="comment-wrap" id="comment-82901">
+<div class="comment-author-wrap">
+<div class="comment-author">Alex Hall</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82901"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T08:50:28-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Oddly enough, I’ve just been working with this myself! In creating a 
+Firefox addon I’m using a nice fluid layout so that my section fit no 
+matter what size browser you have. However, I also wanted a very nice 
+‘Facebook-style’ border with rgba colours so that they were see-through.</p>
+<p>If you set a background-color on the element and apply a border, it 
+won’t be see-through because the border is *technically* on top of the 
+content. Using a mixture of border-box and background-clip I managed to 
+get the desired effect, with ease!</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82902">
+<div class="comment-wrap" id="comment-82902">
+<div class="comment-author-wrap">
+<div class="comment-author">Alex Hall</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82902"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T08:57:14-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Should’ve posted a link to my tests… I do apologise!</p>
+<p><a href="http://www.devseo.co.uk/examples/facebook-style-overlay-css/" rel="nofollow ugc">http://www.devseo.co.uk/examples/facebook-style-overlay-css/</a></p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82903">
+<div class="comment-wrap" id="comment-82903">
+<div class="comment-author-wrap">
+<div class="comment-author">David Garbacz</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82903"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T09:51:31-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>I guess I never really thought of it that way. If you think about 
+cellpadding with tables, it worked in that way didn’t it where the 
+padding cut into the cell instead of adding to the outside.</p>
+<p>I’ll have to agree with Jason above and say that you definitely blew 
+my mind on this one. Big grin came across my face because of how big of a
+ dork I am and found this to be super intriguing.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82904">
+<div class="comment-wrap" id="comment-82904">
+<div class="comment-author-wrap">
+<div class="comment-author">aki</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82904"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T09:51:54-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Always bother me time and time again when creating a box with a 
+specific box, but after setting up with padding and some borders, the 
+size of the box it completely different. I’ve scratch my head few times ,
+ until made some experiment myself that found out the padding+border is 
+the cause of it.</p>
+<p>Nevertheless, a wonderful explanation.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82907">
+<div class="comment-wrap" id="comment-82907">
+<div class="comment-author-wrap">
+<div class="comment-author">A.J. Cates</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82907"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T11:59:01-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>You can also use `display: table` to throw items into border-box sizing mode.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="li-comment-82912">
+<div class="comment-wrap" id="comment-82912">
+<div class="comment-author-wrap">
+<div class="comment-author">Josh L</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82912"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T16:41:07-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>LOL, sup AJ? How are things at Egghead? How random.</p>
+<p>On topic: If you have to choose one box model, the W3 box model is 
+more versatile than the IE one. It bugs me when people who haven’t even 
+read the spec view the W3 model as inferior simply because it is less 
+intuitive.</p>
+<p>Now that we have the alternate box sizing available, we get the best 
+of both worlds. For IE6/7 in standards mode, you could use CSS 
+expressions to bring them in line.</p>
+<p>I’m guessing that this property will be extended soon – I can think 
+of other box-sizing methods that, like border-box, would be useful in 
+special situations. A value for instructing a block element to take up 
+all the height that it can (in the same way that a block element takes 
+up all the width it can) could be incredibly useful.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-82935">
+<div class="comment-wrap" id="comment-82935">
+<div class="comment-author-wrap">
+<div class="comment-author">Asker</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82935"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-10T22:47:05-07:00">September 10, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>you’re not getting any good topics to write..is it right Chris?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-82936">
+<div class="comment-wrap" id="comment-82936">
+<div class="comment-author-wrap">
+<div class="comment-author">Carey</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82936"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T02:33:00-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>I’ve found that border-box sizing is pretty much required if you want
+ to do a fixed size header and footer with scrolling content inset into 
+the page (with overflow-y: scroll). It seems to be the only way to make 
+the content and all its parents 100% high, with fixed top and bottom 
+padding.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-82945">
+<div class="comment-wrap" id="comment-82945">
+<div class="comment-author-wrap">
+<div class="comment-author">Omnipotent</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82945"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T10:46:35-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Very nice and useful. it’s awesome that it works in IE 8, and hopefully im IE 9 too.<br>
+all this css3 goodness and still not all that practical, finally one that could really help with the design.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="li-comment-82960">
+<div class="comment-wrap" id="comment-82960">
+<div class="comment-author-wrap">
+<div class="comment-author">Josh Betz</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82960"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T21:55:25-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>The idea of “practical” CSS3 at this point is a little out of the 
+question. Actually – we’re getting there, but if you’re designing a site
+ that has any respectable amount of traffic coming in over a browser 
+that doesn’t support CSS3, you wouldn’t want to make your site dependent
+ upon it.</p>
+<p>As an aside, I’m confident IE9 will be quite standards compliant.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82950">
+<div class="comment-wrap" id="comment-82950">
+<div class="comment-author-wrap">
+<div class="comment-author">Lisa Thomason</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82950"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T12:30:19-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>‘border-box’ have to remember this one, excellent tip. LT</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82959">
+<div class="comment-wrap" id="comment-82959">
+<div class="comment-author-wrap">
+<div class="comment-author">Josh Betz</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82959"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-11T21:51:40-07:00">September 11, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>This is definitely good to know. I struggle with this every time a do
+ a new design. I’ve liked the 3-across style input fields above the 
+actual comment form for awhile now, but I went back to the standard 
+layout for the comment form for the most recent design of my personal 
+site because of this issue. Even though my site isn’t fluid width (yet),
+ the comments have been fluid since they added that cool new reply 
+feature in 2.8 or so. I’ll definitely be looking for this article again 
+shortly.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82962">
+<div class="comment-wrap" id="comment-82962">
+<div class="comment-author-wrap">
+<div class="comment-author">Bronislav Klucka</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82962"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-12T01:39:12-07:00">September 12, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>This is one of the biggest error W3C have ever done, in 1997 more 
+that 95% of browser share was occupied by browsers using box sizing 
+model (quirk model) or browsers which didn’t understand those CSS at 
+all. W3C should change specification at this point to reflect reality 
+(over theory) and add new property: inner-padding.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82964">
+<div class="comment-wrap" id="comment-82964">
+<div class="comment-author-wrap">
+<div class="comment-author">Hokya</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82964"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-12T04:32:16-07:00">September 12, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>about box-sizing and border-box,</p>
+<p>can it also be imbued in JQuery and traditional JS:</p>
+<p>[identifier].style.boxSizing<br>
+and<br>
+[identifier].style.borderBox</p>
+<p>thanks…</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82968">
+<div class="comment-wrap" id="comment-82968">
+<div class="comment-author-wrap">
+<div class="comment-author">clara vargas</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82968"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-12T12:08:39-07:00">September 12, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>When I first checked out this web write-up discussing the Facebook 
+audience claim that’s off by 17,000 times I concluded CSS Trick’s 
+regulars should check </p>
+<p>this out! <a href="http://hubpages.com/hub/Lies-Damned-Lies-Statistics-ComScores-Facebook-Audience-Claims-Are-Wrong-By-A-Factor-Of-17-000" rel="nofollow ugc">http://hubpages.com/hub/Lies-Damned-Lies-Statistics-ComScores-Facebook-Audience-Claims-Are-Wrong-By-A-Factor-Of-17-000</a> According to ComScore, the </p>
+<p>average Facebook user is online half a second per day! Yeah, sure!</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82977">
+<div class="comment-wrap" id="comment-82977">
+<div class="comment-author-wrap">
+<div class="comment-author">Sumit Chauhan</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82977"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-12T21:27:58-07:00">September 12, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Nice Article.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-82991">
+<div class="comment-wrap" id="comment-82991">
+<div class="comment-author-wrap">
+<div class="comment-author">Cédric Darné</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82991"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T06:26:07-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Very usefull article! This will help me a lot. Thanks!</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-82996">
+<div class="comment-wrap" id="comment-82996">
+<div class="comment-author-wrap">
+<div class="comment-author">Rubens Mariuzzo</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-82996"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T07:45:27-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Hey, I really appreciate this legal trick.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-83000">
+<div class="comment-wrap" id="comment-83000">
+<div class="comment-author-wrap">
+<div class="comment-author">Justin Kopepasah</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83000"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T09:04:37-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Excellent short tut. I was sick and tired of declaring so many different values to fix for padding and borders. </p>
+<p>Thanks!</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-83004">
+<div class="comment-wrap" id="comment-83004">
+<div class="comment-author-wrap">
+<div class="comment-author">cancel bubble</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83004"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T09:48:15-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>“But hey, IE 9 is about to drop right, won’t be a problem for much longer,”</p>
+<p>Except IE9 won’t run on XP, which, for some users means not just getting a new browser, but a new PC.</p>
+<p>IE9 shipping is not a magical bullet for web devs. IE7 will become 
+the new IE6. Then IE8. And let’s face it, a lot of devs will still be 
+dealing with IE6 for years to come (especially those in enterprise 
+land).</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-83015">
+<div class="comment-wrap" id="comment-83015">
+<div class="comment-author-wrap">
+<div class="comment-author">Jamy</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83015"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T14:35:46-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>IE7 is dying faster than IE6. Even if it does become ‘the new IE6’, it won’t be another ‘IE6’.</p>
+<p>People are slowly upgrading PC’s and that is steadily killing older versions of IE. </p>
+<p>I don’t think anyone would buy a new PC to specifically run a certain
+ browser, but if most of the PC’s running Vista and Win7 did upgrade to 
+IE9, we could then relax knowing that an extra 15%+ would be able to 
+make use of CSS3. Obviously this won’t happen over night, but the IE9 
+usage share will steadily grow per month.</p>
+<p>IE9 might not be a magical bullet, but I think it at least qualifies as a poisoned-dagger.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment byuser comment-author-chriscoyier even depth-2" id="li-comment-83018">
+<div class="comment-wrap" id="comment-83018">
+<div class="comment-author-wrap">
+<div class="comment-author">Chris Coyier</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83018"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T16:33:33-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<blockquote><p><em>IE7 is dying faster than IE6.</em></p></blockquote>
+<p>That’s pretty interesting. I bet it’s true… Do you have any data you’ve seen to support that?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt depth-2" id="li-comment-83021">
+<div class="comment-wrap" id="comment-83021">
+<div class="comment-author-wrap">
+<div class="comment-author">Bronislav Klucka</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83021"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T17:32:48-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p><a href="http://marketshare.hitslink.com/browser-market-share.aspx?qprid=3" rel="nofollow ugc">http://marketshare.hitslink.com/browser-market-share.aspx?qprid=3</a><br>
+<a href="https://www.w3schools.com/browsers/browsers_explorer.asp" rel="nofollow ugc">http://www.w3schools.com/browsers/browsers_explorer.asp</a><br>
+<a href="https://www.w3counter.com/trends" rel="nofollow ugc">http://www.w3counter.com/trends</a><br>
+<a href="https://www.xmarks.com/topic/browser_statistics" rel="nofollow ugc">http://www.xmarks.com/topic/browser_statistics</a></p>
+<p>there are no “world wide” statistics, but those mentioned above show some trends</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment byuser comment-author-chriscoyier even depth-2" id="li-comment-83022">
+<div class="comment-wrap" id="comment-83022">
+<div class="comment-author-wrap">
+<div class="comment-author">Chris Coyier</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83022"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-13T17:43:36-07:00">September 13, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Very cool.</p>
+<p>Seems to me they indicate that they are falling about equally fast, 
+but IE 7 has a larger slice still. So if they stay at and even falling 
+rate, IE 7 will always have a higher percentage. That would be pretty 
+crazy if IE 6 ever got higher than IE 7 again.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-83040">
+<div class="comment-wrap" id="comment-83040">
+<div class="comment-author-wrap">
+<div class="comment-author">Yuriy Romadin</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-83040"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-09-14T13:57:31-07:00">September 14, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>Interesting, but not cross-browsing :(</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-84395">
+<div class="comment-wrap" id="comment-84395">
+<div class="comment-author-wrap">
+<div class="comment-author">likeuclinux</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-84395"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-10-19T19:18:33-07:00">October 19, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>your demo code won’t work for:<br>
+<code></code></p><code>
+</code><p><code></code></p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-84396">
+<div class="comment-wrap" id="comment-84396">
+<div class="comment-author-wrap">
+<div class="comment-author">likeuclinux</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-84396"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-10-19T19:19:38-07:00">October 19, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>won’t work for doctype contains:<br>
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-84496">
+<div class="comment-wrap" id="comment-84496">
+<div class="comment-author-wrap">
+<div class="comment-author">Acaz</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-84496"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-10-23T23:43:21-07:00">October 23, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>The best article ever…</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-84971">
+<div class="comment-wrap" id="comment-84971">
+<div class="comment-author-wrap">
+<div class="comment-author">Kal</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-84971"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-11-03T12:12:53-07:00">November 3, 2010</time></div>
+</div>
+<div class="comment-content">
+<p>This has always been my biggest gripe with doing CSS layouts — well, 
+aside from catering to all Internet Explorer’s quirks of course. Ironic 
+that IE actually used to do it the border-box way.</p>
+<p>Thanks for the article. I’m going to introduce this into all my sites
+ from now on — screw IE 7. Did I say that? I mean, we’ll find a dodgy 
+workaround for IE in it’s own stylesheet or something.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-581107">
+<div class="comment-wrap" id="comment-581107">
+<div class="comment-author-wrap">
+<div class="comment-author">yvan</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-581107"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-10-09T12:01:58-07:00">October 9, 2013</time></div>
+</div>
+<div class="comment-content">
+<p>Hey there, why in the ” lame try ” dont you just use a padding with 3% and use an outline instead of the border ?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1 buried" id="li-comment-697519">
+<div class="comment-wrap" id="comment-697519">
+<div class="comment-author-wrap">
+<div class="comment-author">Suraj Shakya</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-697519"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-11-24T00:18:25-08:00">November 24, 2013</time></div>
+</div>
+<div class="comment-content">
+<p>Thanx for the great article, really helped me exactly what i was wondering about.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-714048">
+<div class="comment-wrap" id="comment-714048">
+<div class="comment-author-wrap">
+<div class="comment-author">Jamie Hill</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-714048"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-11-26T15:29:56-08:00">November 26, 2013</time></div>
+</div>
+<div class="comment-content">
+<p>I would like a “box-sizing: margin-box”, then <a href="https://codepen.io/thelucid/details/ouHeK" rel="nofollow ugc">tricks like this</a> wouldn’t be necessary.</p>
+<p>Any W3C peeps listening?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-769444">
+<div class="comment-wrap" id="comment-769444">
+<div class="comment-author-wrap">
+<div class="comment-author">Gopu</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-769444"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-12-06T03:53:34-08:00">December 6, 2013</time></div>
+</div>
+<div class="comment-content">
+<p>.navigation_main ul li a {<br>
+background-color: #FFFFFF;<br>
+border-radius: 5px 5px 0 0;<br>
+color: #003366;<br>
+font-size: 13px;<br>
+margin: 1.2px;<br>
+padding: 5px;<br>
+}<br>
+in this code padding and margin is working with only chrome and firefox,
+ i need to work this code over IE 9…but alignmnt pblm is arising, help 
+me to fix this issue..</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-916170">
+<div class="comment-wrap" id="comment-916170">
+<div class="comment-author-wrap">
+<div class="comment-author">Newton</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-916170"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-12-22T03:45:01-08:00">December 22, 2013</time></div>
+</div>
+<div class="comment-content">
+<p><a href="https://jsfiddle.net/nsrau/ptt58/" rel="nofollow ugc">http://jsfiddle.net/nsrau/ptt58/</a></p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-993695">
+<div class="comment-wrap" id="comment-993695">
+<div class="comment-author-wrap">
+<div class="comment-author">David Walker</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-993695"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-12-30T08:45:50-08:00">December 30, 2013</time></div>
+</div>
+<div class="comment-content">
+<p><a href="https://g.grax.com/1d5bjxR" rel="nofollow ugc">SubtractJS</a> offers a different take on the box model.</p>
+<p>SubtractJS can fill an edge of the screen or of any box that is 
+positioned relative or absolute. It can also fill the entire box.</p>
+<p>It sizes the contents so that the contents plus the padding, border, and margin exactly fill the containing box.</p>
+<p>It is great for creating sticky headers, footers, or edges, as well 
+as for precisely filling an absolute or relatively positioned element.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1338755">
+<div class="comment-wrap" id="comment-1338755">
+<div class="comment-author-wrap">
+<div class="comment-author">Franzele</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1338755"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-03-14T02:44:04-07:00">March 14, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>Just a little addition.</p>
+<p>Be warned that pseudo-elements ::after and ::before don’t seem to adhere to the rule in the general selector<br>
+<code>* {<br>
+box-sizing: border-box;<br>
+}</code><br>
+so the best way to make them look as you want is to repeat the box-sizing rule in the ::after/before declaration itself.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-1567434">
+<div class="comment-wrap" id="comment-1567434">
+<div class="comment-author-wrap">
+<div class="comment-author">Wayne</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1567434"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-04-12T15:49:10-07:00">April 12, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>So, correct me if I’m wrong but I think what I’m hearing is that you 
+prefer the Microsoft box model and you wish that’s the way all browser 
+had always done it by default.</p>
+<p>I agree.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1580786">
+<div class="comment-wrap" id="comment-1580786">
+<div class="comment-author-wrap">
+<div class="comment-author">Javid</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1580786"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-05-06T00:37:01-07:00">May 6, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>The code throws warnings in Firefox console for (css warnings) <code>box-sizing:border-box;</code> Is that a Firefox bug?</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-1582869">
+<div class="comment-wrap" id="comment-1582869">
+<div class="comment-author-wrap">
+<div class="comment-author">Dan</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1582869"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-06-19T04:39:35-07:00">June 19, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>Hi Chris,</p>
+<p>What solution do you recommend for IE7 – Do you know of a light PolyFill?</p>
+<p>Cheers,<br>
+Dan</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+<ul class="children">
+<li class="comment byuser comment-author-chriscoyier even depth-2" id="li-comment-1582873">
+<div class="comment-wrap" id="comment-1582873">
+<div class="comment-author-wrap">
+<div class="comment-author">Chris Coyier</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1582873"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-06-19T06:10:56-07:00">June 19, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>Personally, I would not even bother trying if I had to support IE 7. 
+The old way is harder to think about it, but not THAT much harder. 
+Penalizing older browsers with a polyfill (more code) doesn’t feel 
+right.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1582882">
+<div class="comment-wrap" id="comment-1582882">
+<div class="comment-author-wrap">
+<div class="comment-author">Dan</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1582882"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-06-19T07:11:57-07:00">June 19, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>Thanks for the quick response Chris.</p>
+<p>I’m so used to using border-box and not even thinking about ie7 but 
+the client I’m currently working for supports it. I considered a 
+polyfill but you’re right seems a bit OTT.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-1583096">
+<div class="comment-wrap" id="comment-1583096">
+<div class="comment-author-wrap">
+<div class="comment-author">Sanjeev</div> <div class="comment-time"><a href="https://css-tricks.com/box-sizing/#comment-1583096"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-06-25T02:14:01-07:00">June 25, 2014</time></div>
+</div>
+<div class="comment-content">
+<p>Nice share as always, thanks Chris.<br>
+For IE box-sizing property depends on IE Document Mode, it works on “IE8
+ Standards mode” &amp; higher. So it will work in IE8 browser also if 
+document mode is “IE8 Standards mode”.</p>
+</div>
+<div class="comment-actions">
+<div class="reply">
+</div>
+</div>
+</div>
+</li>
+</ol>
+<div class="comments-closed">
+This comment thread is closed. If you have important information to share, please <a href="https://css-tricks.com/contact/">contact us</a>.
+</div>
+</section> <div class="related-posts">
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+<div class="jp-relatedposts-items jp-relatedposts-items-visual jp-relatedposts-grid "><div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-thumbs" data-post-id="333756" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://css-tricks.com/exploring-the-complexities-of-width-and-height-in-css/" title="Exploring the Complexities of Width and Height in CSS" data-origin="7323" data-position="0"><img class="jp-relatedposts-post-img" loading="lazy" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/steps.webp" alt="" width="350" height="200"></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://css-tricks.com/exploring-the-complexities-of-width-and-height-in-css/" title="Exploring the Complexities of Width and Height in CSS" data-origin="7323" data-position="0">Exploring the Complexities of Width and Height in CSS</a></h4><p class="jp-relatedposts-post-excerpt">The
+ following article is co-authored by Uri Shaked and Michal Porag. Let’s 
+explore the complexities of how CSS computes the width and height 
+dimensions of elements. This is based on countless late-night hours 
+debugging and fiddling with lots of combinations of CSS properties, 
+reading though the specs, and trying to…</p><time class="jp-relatedposts-post-date" datetime="February 5, 2021" style="display: block;">February 5, 2021</time></div><div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-nothumbs" data-post-id="161608" data-post-format="false"><a class="jp-relatedposts-post-a jp-relatedposts-post-aoverlay" href="https://css-tricks.com/international-box-sizing-awareness-day/" title="International box-sizing Awareness Day" data-origin="7323" data-position="1"></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://css-tricks.com/international-box-sizing-awareness-day/" title="International box-sizing Awareness Day" data-origin="7323" data-position="1">International box-sizing Awareness Day</a></h4><p class="jp-relatedposts-post-excerpt" style="max-height: 9.09091em;">It's
+ February 1st today, which I've decided to declare International 
+box-sizing Awareness Day. In honor of, you guessed it, the most humble 
+and undersung, yet awesome and useful CSS property: box-sizing. The date
+ corresponds to Paul Irish's post where he introduced the concept of 
+using it on every single element…</p><time class="jp-relatedposts-post-date" datetime="February 1, 2014" style="display: block;">February 1, 2014</time></div><div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="281146" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://css-tricks.com/how-well-do-you-know-css-layout/" title="How Well Do You Know CSS Layout?" data-origin="7323" data-position="2"><img class="jp-relatedposts-post-img" loading="lazy" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/hands-dirst-flowers.webp" alt="" width="350" height="200"></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://css-tricks.com/how-well-do-you-know-css-layout/" title="How Well Do You Know CSS Layout?" data-origin="7323" data-position="2">How Well Do You Know CSS Layout?</a></h4><p class="jp-relatedposts-post-excerpt">The
+ difference between a CSS good experience and a long frustrating one is 
+oftentimes a matter of a few small details. CSS is indeed nuanced. One 
+of the most common areas where I see struggles is layout. Personally, I 
+like to study patterns. I notice that I tend to use…</p><time class="jp-relatedposts-post-date" datetime="January 15, 2019" style="display: block;">January 15, 2019</time></div></div></div> <div class="jetpack-sponsored-posts-message">
+<img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/jetpack-logo_cegyqg.png" alt="Jetpack Logo">
+<p>The related posts above were algorithmically generated and displayed here without any load on our servers at all, <a href="https://jetpack.com/support/related-posts/?aff=8638">thanks to Jetpack</a>.</p>
+</div>
+</div> </div>
+</div>
+</div>
+<footer class="site-footer">
+<svg class="icon-logo-star" width="35px" height="35px" viewBox="0 0 362.62 388.52" data-spin-me="false">
+<path d="M156.58,239l-88.3,64.75c-10.59,7.06-18.84,11.77-29.43,11.77-21.19,0-38.85-18.84-38.85-40C0,257.83,14.13,244.88,27.08,239l103.6-44.74L27.08,148.34C13,142.46,0,129.51,0,111.85,0,90.66,18.84,73,40,73c10.6,0,17.66,3.53,28.25,11.77l88.3,64.75L144.81,44.74C141.28,20,157.76,0,181.31,0s40,18.84,36.5,43.56L206,149.52l88.3-64.75C304.93,76.53,313.17,73,323.77,73a39.2,39.2,0,0,1,38.85,38.85c0,18.84-12.95,30.61-27.08,36.5L231.93,194.26,335.54,239c14.13,5.88,27.08,18.83,27.08,37.67,0,21.19-18.84,38.85-40,38.85-9.42,0-17.66-4.71-28.26-11.77L206,239l11.77,104.78c3.53,24.72-12.95,44.74-36.5,44.74s-40-18.84-36.5-43.56Z"></path>
+</svg>
+<div class="footer-inside">
+<div class="footer-message-and-form">
+<p class="colophon">
+CSS-Tricks is created by <a href="https://chriscoyier.net/">Chris</a> and a <a href="https://css-tricks.com/about">team</a> of swell&nbsp;people.
+</p>
+<div class="footer-form-wrap">
+<form action="https://chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form">
+<h4>Keep up to date on web dev</h4>
+<p>with our hand-crafted weekly newsletter</p>
+<div class="footer-form">
+<label for="mce-EMAIL" class="screen-reader">Email Address</label>
+<input type="email" name="EMAIL" class="required email mailchimp-email-input" id="mce-EMAIL" placeholder="smart@cookie.com" required="">
+<input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="button subscribe-button">
+</div>
+</form>
+</div> </div>
+<div class="link-grid">
+<div>
+<div>
+<h5>
+Tech
+</h5>
+<ul>
+<li><a href="https://wordpress.org/">WordPress</a> <span>(CMS)</span></li>
+<li><a href="https://css-tricks.com/jetpack/">Jetpack</a> <span>(Search, Backup)</span></li>
+<li><a href="https://woocommerce.com/?aff=8638">WooCommerce</a> <span>(eCommerce)</span></li>
+<li><a href="https://localwp.com/">Local</a> <span>(Development)</span></li>
+</ul>
+</div>
+<div>
+<h5>Hosting</h5>
+<ul>
+<li><a href="https://share.getf.ly/k96n2f">Flywheel</a></li>
+</ul>
+</div>
+</div>
+<div>
+<div>
+<h5>Family</h5>
+<ul>
+<li><a href="https://codepen.io/">CodePen</a></li>
+<li><a href="https://shoptalkshow.com/">ShopTalk Show</a></li>
+</ul>
+</div>
+<div>
+<h5>Minisites</h5>
+<ul>
+<li><a href="https://serverless.css-tricks.com/">The Power of Serverless</a></li>
+<li><a href="https://conferences.css-tricks.com/">Upcoming Conferences</a></li>
+<li><a href="https://coding-fonts.css-tricks.com/">Coding Fonts</a></li>
+</ul>
+</div>
+</div>
+<div>
+<div>
+<h5>Contact</h5>
+<ul>
+<li><a href="mailto:team@css-tricks.com">Email</a></li>
+<li><a href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsorship Info</a></li>
+<li><a href="https://css-tricks.com/guest-writing-for-css-tricks/">Guest Writing</a></li>
+</ul>
+</div>
+<div>
+<h5>Buy</h5>
+<ul>
+<li><a href="https://css-tricks.com/shop/">Posters &amp; Swag</a></li>
+<li><a href="https://css-tricks.com/product/mvp-supporter/">Membership</a></li>
+</ul>
+</div>
+</div>
+<div>
+<div>
+<h5>Follow</h5>
+<ul>
+<li><a href="https://twitter.com/css">Twitter</a></li>
+<li><a href="https://www.instagram.com/real_css_tricks/">Instagram</a></li>
+<li><a href="https://www.youtube.com/user/realcsstricks">YouTube</a></li>
+<li><a href="https://codepen.io/team/css-tricks">CodePen</a></li>
+<li><a href="https://github.com/CSS-Tricks">GitHub</a></li>
+<li><a href="https://podcasts.apple.com/us/podcast/css-tricks-screencasts/id273881728">iTunes</a></li>
+<li><a href="https://css-tricks.com/feed/">RSS</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<a href="#top-of-site" class="top-of-site-link" data-visible="false">
+<span class="screen-reader-text">Back to Top</span>
+<svg width="32" height="32" viewBox="0 0 100 100">
+<path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+</svg>
+</a>
+</footer>
+
+
+<svg width="0" height="0" class="screen-reader">
+<defs>
+<linearGradient id="orange-to-pink" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff7a18"></stop>
+<stop offset="40%" stop-color="#af002d"></stop>
+<stop offset="100%" stop-color="#319197"></stop>
+</linearGradient>
+<filter id="duotone_orange_pink">
+<feColorMatrix type="matrix" result="grayscale" values="1 0 0 0 0
+                  1 0 0 0 0
+                  1 0 0 0 0
+                  0 0 0 1 0">
+</feColorMatrix>
+<feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+<feFuncR type="table" tableValues="0.7411764706 0.9882352941"></feFuncR>
+<feFuncG type="table" tableValues="0.0431372549 0.7333333333"></feFuncG>
+<feFuncB type="table" tableValues="0.568627451 0.05098039216"></feFuncB>
+<feFuncA type="table" tableValues="0 1"></feFuncA>
+</feComponentTransfer>
+</filter>
+</defs>
+</svg>
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://css-tricks.com/#organization","name":"CSS-Tricks","logo":{"@type":"ImageObject","@id":"https://css-tricks.com/#logo","url":"https://css-tricks.com/wp-content/uploads/2019/06/akqRGyta_400x400.jpg","caption":"CSS-Tricks","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://css-tricks.com/#website","url":"https://css-tricks.com","name":"CSS-Tricks","publisher":{"@id":"https://css-tricks.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"//css-tricks.com/wp-content/uploads/2010/09/widthbox.png","url":"//css-tricks.com/wp-content/uploads/2010/09/widthbox.png","width":"200","height":"200","inLanguage":"en-US"},{"@type":"Person","@id":"https://css-tricks.com/author/mjmoze/","name":"Marie Mosley","url":"https://css-tricks.com/author/mjmoze/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/4fad24b3cf4fc4b3d643f6b8bceb4bae?s=96&amp;d=retro&amp;r=pg","url":"https://secure.gravatar.com/avatar/4fad24b3cf4fc4b3d643f6b8bceb4bae?s=96&amp;d=retro&amp;r=pg","caption":"Marie Mosley","inLanguage":"en-US"},"sameAs":["https://www.mariemosley.com","https://twitter.com/mmosley"],"worksFor":{"@id":"https://css-tricks.com/#organization"}},{"@type":"WebPage","@id":"https://css-tricks.com/box-sizing/#webpage","url":"https://css-tricks.com/box-sizing/","name":"Box Sizing | CSS-Tricks","datePublished":"2010-09-10T06:24:46-07:00","dateModified":"2015-05-06T12:00:05-07:00","author":{"@id":"https://css-tricks.com/author/mjmoze/"},"isPartOf":{"@id":"https://css-tricks.com/#website"},"primaryImageOfPage":{"@id":"//css-tricks.com/wp-content/uploads/2010/09/widthbox.png"},"inLanguage":"en-US"},{"@type":"BlogPosting","headline":"Box Sizing | CSS-Tricks","datePublished":"2010-09-10T06:24:46-07:00","dateModified":"2015-05-06T12:00:05-07:00","author":{"@id":"https://css-tricks.com/author/mjmoze/"},"publisher":{"@id":"https://css-tricks.com/#organization"},"description":"The box-sizing property can make building CSS layouts easier and a lot more intuitive. It&#039;s such a boon for developers that here at CSS-Tricks we observe","name":"Box Sizing | CSS-Tricks","@id":"https://css-tricks.com/box-sizing/#richSnippet","isPartOf":{"@id":"https://css-tricks.com/box-sizing/#webpage"},"image":{"@id":"//css-tricks.com/wp-content/uploads/2010/09/widthbox.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://css-tricks.com/box-sizing/#webpage"}}]}</script><script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/related-posts.js" id="jetpack_related-posts-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/regenerator-runtime.js" id="regenerator-runtime-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/wp-polyfill.js" id="wp-polyfill-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/hooks.js" id="wp-hooks-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/i18n.js" id="wp-i18n-js"></script><script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script><script type="text/javascript" id="wp-jp-i18n-state-js-before">
+console.warn( "Failed to determine languages base URL. Is WP_LANG_DIR in the WordPress root?" );
+</script><script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script><script defer="defer" data-domain="css-tricks.com" data-api="/plausible-proxy/api/event" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/script.js"></script><script>
+  var articleYear = 2010;
+  var articleAuthor = "33562";
+  var articleType = "post";
+</script><script>window.addEventListener('load', function() {
+				document.querySelectorAll('link').forEach(function(e) {'not all' === e.media && e.dataset.media && (e.media=e.dataset.media,delete e.dataset.media)});
+				var e = document.getElementById('jetpack-boost-critical-css');
+				e && (e.media = 'not all');
+			});</script><script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/photon.js" id="jetpack-photon-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/jquery-3.js" id="jquery-js"></script><script type="text/javascript" id="jetpack-live-comment-markdown-js-extra">
+/* <![CDATA[ */
+var markdownify = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"381740f4f2"};
+/* ]]> */
+</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/markdownify.js" id="jetpack-live-comment-markdown-js"></script><script id="jetpack-instant-search-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "jetpack", { "locale_data": { "messages": { "": {} } } } );
+</script><script id="jetpack-instant-search-js-before">
+var JetpackInstantSearchOptions=JSON.parse(decodeURIComponent("%7B%22overlayOptions%22%3A%7B%22colorTheme%22%3A%22dark%22%2C%22enableInfScroll%22%3Afalse%2C%22enableSort%22%3Atrue%2C%22highlightColor%22%3A%22%23f4af38%22%2C%22overlayTrigger%22%3A%22results%22%2C%22resultFormat%22%3A%22expanded%22%2C%22showPoweredBy%22%3Atrue%2C%22defaultSort%22%3A%22relevance%22%2C%22excludedPostTypes%22%3A%5B%22attachment%22%2C%22screenshot%22%5D%7D%2C%22homeUrl%22%3A%22https%3A%5C%2F%5C%2Fcss-tricks.com%22%2C%22locale%22%3A%22en-US%22%2C%22postsPerPage%22%3A11%2C%22siteId%22%3A45537868%2C%22postTypes%22%3A%7B%22post%22%3A%7B%22singular_name%22%3A%22Post%22%2C%22name%22%3A%22Posts%22%7D%2C%22page%22%3A%7B%22singular_name%22%3A%22Page%22%2C%22name%22%3A%22Pages%22%7D%2C%22attachment%22%3A%7B%22singular_name%22%3A%22Media%22%2C%22name%22%3A%22Media%22%7D%2C%22product%22%3A%7B%22singular_name%22%3A%22Product%22%2C%22name%22%3A%22Products%22%7D%2C%22screenshot%22%3A%7B%22singular_name%22%3A%22Screenshot%22%2C%22name%22%3A%22Screenshots%22%7D%2C%22guides%22%3A%7B%22singular_name%22%3A%22Guide%22%2C%22name%22%3A%22Guides%22%7D%2C%22newsletters%22%3A%7B%22singular_name%22%3A%22Newsletter%22%2C%22name%22%3A%22Newsletters%22%7D%2C%22chapters%22%3A%7B%22singular_name%22%3A%22Chapter%22%2C%22name%22%3A%22Chapters%22%7D%7D%2C%22webpackPublicPath%22%3A%22https%3A%5C%2F%5C%2Fcss-tricks.com%5C%2Fwp-content%5C%2Fplugins%5C%2Fjetpack%5C%2F_inc%5C%2Fbuild%5C%2Finstant-search%5C%2F%22%2C%22isPhotonEnabled%22%3Atrue%2C%22apiRoot%22%3A%22https%3A%5C%2F%5C%2Fcss-tricks.com%5C%2Fwp-json%5C%2F%22%2C%22apiNonce%22%3A%229b9c2e3ec4%22%2C%22isPrivateSite%22%3Afalse%2C%22isWpcom%22%3Afalse%2C%22hasOverlayWidgets%22%3Atrue%2C%22widgets%22%3A%5B%7B%22filters%22%3A%5B%7B%22name%22%3A%22Post%20Types%22%2C%22type%22%3A%22post_type%22%2C%22count%22%3A5%2C%22widget_id%22%3A%22jetpack-search-filters-5%22%2C%22filter_id%22%3A%22post_type_0%22%7D%2C%7B%22name%22%3A%22Year%22%2C%22type%22%3A%22date_histogram%22%2C%22count%22%3A1%2C%22field%22%3A%22post_date%22%2C%22interval%22%3A%22year%22%2C%22widget_id%22%3A%22jetpack-search-filters-5%22%2C%22filter_id%22%3A%22date_histogram_1%22%7D%2C%7B%22name%22%3A%22Tags%22%2C%22type%22%3A%22taxonomy%22%2C%22taxonomy%22%3A%22post_tag%22%2C%22count%22%3A5%2C%22widget_id%22%3A%22jetpack-search-filters-5%22%2C%22filter_id%22%3A%22taxonomy_2%22%7D%5D%2C%22widget_id%22%3A%22jetpack-search-filters-5%22%7D%5D%2C%22widgetsOutsideOverlay%22%3A%5B%5D%2C%22hasNonSearchWidgets%22%3Atrue%2C%22adminQueryFilter%22%3A%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22post_type%22%3A%22post%22%7D%7D%2C%7B%22term%22%3A%7B%22post_type%22%3A%22page%22%7D%7D%2C%7B%22term%22%3A%7B%22post_type%22%3A%22newsletters%22%7D%7D%2C%7B%22term%22%3A%7B%22post_type%22%3A%22chapters%22%7D%7D%5D%7D%7D%7D"));
+</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/jp-search-main.js" id="jetpack-instant-search-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/w.js" id="jp-tracks-js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/intersection-observer.js" id="jetpack-lazy-images-polyfill-intersectionobserver-js"></script><script type="text/javascript" id="jetpack-lazy-images-js-extra">
+/* <![CDATA[ */
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+/* ]]> */
+</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/lazy-images.js" id="jetpack-lazy-images-js"></script><script type="text/javascript">
+jQuery(function($) { 
+
+			$( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).on( 'click', function() {
+				gtag( 'event', 'add_to_cart', { 'event_category': 'ecommerce', 'event_label': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')), 'items': [ {'id': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')),'quantity': $(this).data('quantity')} ] } );
+			});
+		
+ });
+</script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/e-202203.js" defer="defer"></script><script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.5',blog:'45537868',post:'7323',tz:'-8',srv:'css-tricks.com'} ]);
+	_stq.push([ 'clickTrackerInit', '45537868', '7323' ]);
+</script><style>img#wpstats {
+			position: absolute !important;
+			clip: rect(0, 0, 0, 0);
+			padding: 0 !important;
+			border: 0 !important;
+			height: 0 !important;
+			width: 0 !important;
+			overflow: hidden;
+		}</style><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/g.gif" alt="" id="wpstats"><script>
+    window.activeMember = false;
+  </script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/global-concat.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68528-29', 'auto');
+
+  if (typeof articleYear !== "undefined") {
+    ga('set', 'dimension1', articleYear);
+  }
+  if (typeof articleAuthor !== "undefined") {
+    ga('set', 'dimension2', articleAuthor);
+  }
+  if (typeof articleType !== "undefined") {
+    ga('set', 'dimension3', articleType);
+  }
+
+  ga('send', 'pageview');
+</script><script async="" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/ei.js"></script><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/5.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script><script defer="defer" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6d16746b9b1e189b&quot;,&quot;token&quot;:&quot;2863ac31b15c48f5b94bd8b0c38aba94&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+<div aria-hidden="true" aria-labelledby="jetpack-instant-search__overlay-title" class="jetpack-instant-search jetpack-instant-search__overlay jetpack-instant-search__overlay--dark  is-hidden" role="dialog"><h1 id="jetpack-instant-search__overlay-title" class="screen-reader-text">Search results</h1><div aria-hidden="false" aria-live="polite" class="jetpack-instant-search__search-results"><div class="jetpack-instant-search__search-results-controls"><form autocomplete="off" role="search" class="jetpack-instant-search__search-results-search-form"><div class="jetpack-instant-search__search-form"><div class="jetpack-instant-search__box"><label class="jetpack-instant-search__box-label" for="jetpack-instant-search__box-input-1"><span class="screen-reader-text assistive-text">Site Search</span><div class="jetpack-instant-search__box-gridicon"><svg class="gridicon gridicons-search " focusable="true" height="24" style="height: 24px; width: 24px;" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="false"><title>Search</title><g><path d="M21 19l-5.154-5.154C16.574 12.742 17 11.42 17 10c0-3.866-3.134-7-7-7s-7 3.134-7 7 3.134 7 7 7c1.42 0 2.742-.426 3.846-1.154L19 21l2-2zM5 10c0-2.757 2.243-5 5-5s5 2.243 5 5-2.243 5-5 5-5-2.243-5-5z"></path></g></svg></div><input autocomplete="off" id="jetpack-instant-search__box-input-1" class="search-field jetpack-instant-search__box-input" inputmode="search" placeholder="Search…" type="search"><button class="screen-reader-text assistive-text">Search</button></label></div></div></form><button class="jetpack-instant-search__overlay-close" tabindex="0" aria-label="Close search results"><svg class="gridicon gridicons-cross " focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Close search results</title><g><path d="M18.36 19.78L12 13.41l-6.36 6.37-1.42-1.42L10.59 12 4.22 5.64l1.42-1.42L12 10.59l6.36-6.36 1.41 1.41L13.41 12l6.36 6.36z"></path></g></svg></button></div><div class="jetpack-instant-search__search-form-controls"><div role="button" tabindex="0" class="jetpack-instant-search__search-results-filter-button">Filters<svg class="gridicon gridicons-chevron-down " focusable="true" height="16" style="height: 16px; width: 16px;" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><path d="M20 9l-8 8-8-8 1.414-1.414L12 14.172l6.586-6.586"></path></g></svg><span class="screen-reader-text assistive-text">Show filters</span></div><div class="jetpack-instant-search__search-sort jetpack-instant-search__search-sort-with-links"><div class="screen-reader-text">Sort by: </div><a class="jetpack-instant-search__search-sort-option is-selected" data-value="relevance" role="button" tabindex="0">Relevance</a><a class="jetpack-instant-search__search-sort-option " data-value="newest" role="button" tabindex="0">Newest</a><a class="jetpack-instant-search__search-sort-option " data-value="oldest" role="button" tabindex="0">Oldest</a></div></div><div class="jetpack-instant-search__search-results-content"><div class="jetpack-instant-search__search-results-primary"><style>
+							.jetpack-instant-search *::selection,
+							.jetpack-instant-search .jetpack-instant-search__search-results .jetpack-instant-search__search-results-primary .jetpack-instant-search__search-result mark {
+								color: black;
+								background-color: #f4af38;
+							}
+						</style><div class="jetpack-instant-search__search-results-title">Found 7,982 results</div><ol class="jetpack-instant-search__search-results-list is-format-expanded"><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--page  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"><span class="jetpack-instant-search__path-breadcrumb-piece">snippets › </span><span class="jetpack-instant-search__path-breadcrumb-piece">css › </span><span class="jetpack-instant-search__path-breadcrumb-piece">a-guide-to-flexbox</span></a></div><div class="jetpack-instant-search__search-result-expanded__content">Our
+ comprehensive guide to CSS flexbox layout. This complete guide explains
+ everything about flexbox, focusing on all the different possible 
+properties for the parent element (the flex container) and the child 
+elements (the flex items). It also includes history, demos, patterns, 
+and a browser support chart.</div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="A Complete Guide to Flexbox" class="jetpack-instant-search__search-result-expanded__image" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/guide-flexbox.webp"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--page  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/"><span class="jetpack-instant-search__path-breadcrumb-piece">snippets › </span><span class="jetpack-instant-search__path-breadcrumb-piece">css › </span><span class="jetpack-instant-search__path-breadcrumb-piece">complete-guide-grid</span></a></div><div class="jetpack-instant-search__search-result-expanded__content">Our
+ comprehensive guide to CSS grid, focusing on all the settings both for 
+the grid parent container and the grid child elements.</div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="A Complete Guide to Grid" class="jetpack-instant-search__search-result-expanded__image" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/grid-guide.webp"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/hottest-front-end-tools-in-2021/">What Were the Hottest Front-End Tools in 2021?</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/hottest-front-end-tools-in-2021/"><span class="jetpack-instant-search__path-breadcrumb-piece">hottest-front-end-tools-in-2021</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/hottest-front-end-tools-in-2021/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="What Were the Hottest Front-End Tools in 2021?" class="jetpack-instant-search__search-result-expanded__image" src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/top-60-tools-2021.webp"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--page jetpack-instant-search__search-result-expanded--no-image "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/archives/">Archives</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/archives/"><span class="jetpack-instant-search__path-breadcrumb-piece">archives</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/archives/"><div class="jetpack-instant-search__search-result-expanded__image-container"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/a-whole-website-in-a-single-html-file/">A Whole Website in a Single HTML File</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/a-whole-website-in-a-single-html-file/"><span class="jetpack-instant-search__path-breadcrumb-piece">a-whole-website-in-a-single-html-file</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/a-whole-website-in-a-single-html-file/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="A Whole Website in a Single HTML File" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/perfect-full-page-background-image/">Perfect Full Page Background&nbsp;Image</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/perfect-full-page-background-image/"><span class="jetpack-instant-search__path-breadcrumb-piece">perfect-full-page-background-image</span></a></div><div class="jetpack-instant-search__search-result-expanded__content">Four
+ techniques are explored on accomplishing a full page background image 
+that conforms to our exceptions: no white space, scales as needed, 
+retains aspect ratio, centered, and more.</div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/perfect-full-page-background-image/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="Perfect Full Page Background&nbsp;Image" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/css-based-fingerprinting/">CSS-Based Fingerprinting</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/css-based-fingerprinting/"><span class="jetpack-instant-search__path-breadcrumb-piece">css-based-fingerprinting</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/css-based-fingerprinting/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="CSS-Based Fingerprinting" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/the-shapes-of-css/">The Shapes of CSS</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/the-shapes-of-css/"><span class="jetpack-instant-search__path-breadcrumb-piece">the-shapes-of-css</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/the-shapes-of-css/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="The Shapes of CSS" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--post  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/using-svg/">Using SVG</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/using-svg/"><span class="jetpack-instant-search__path-breadcrumb-piece">using-svg</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/using-svg/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="Using SVG" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--page  "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">Media Queries for Standard Devices</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/"><span class="jetpack-instant-search__path-breadcrumb-piece">snippets › </span><span class="jetpack-instant-search__path-breadcrumb-piece">css › </span><span class="jetpack-instant-search__path-breadcrumb-piece">media-queries-for-standard-devices</span></a></div><div class="jetpack-instant-search__search-result-expanded__content">This
+ page lists a ton of different devices and media queries that would 
+specifically target that device. That's probably not generally a great 
+practice, but it is helpful to know what the dimensions for all these 
+devices are in a CSS context.</div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/"><div class="jetpack-instant-search__search-result-expanded__image-container"><img alt="Media Queries for Standard Devices" class="jetpack-instant-search__search-result-expanded__image"></div></a></div></li><li class="jetpack-instant-search__search-result jetpack-instant-search__search-result-expanded jetpack-instant-search__search-result-expanded--page jetpack-instant-search__search-result-expanded--no-image "><div class="jetpack-instant-search__search-result-expanded__content-container"><div class="jetpack-instant-search__search-result-expanded__copy-container"><h3 class="jetpack-instant-search__search-result-title jetpack-instant-search__search-result-expanded__title"><a class="jetpack-instant-search__search-result-title-link jetpack-instant-search__search-result-expanded__title-link" href="https://css-tricks.com/snippets/css/css-triangle/">CSS Triangle</a></h3><div class="jetpack-instant-search__path-breadcrumb jetpack-instant-search__search-result-expanded__path"><a class="jetpack-instant-search__path-breadcrumb-link" href="https://css-tricks.com/snippets/css/css-triangle/"><span class="jetpack-instant-search__path-breadcrumb-piece">snippets › </span><span class="jetpack-instant-search__path-breadcrumb-piece">css › </span><span class="jetpack-instant-search__path-breadcrumb-piece">css-triangle</span></a></div><div class="jetpack-instant-search__search-result-expanded__content"></div></div><a class="jetpack-instant-search__search-result-expanded__image-link" href="https://css-tricks.com/snippets/css/css-triangle/"><div class="jetpack-instant-search__search-result-expanded__image-container"></div></a></div></li></ol><div class="jetpack-instant-search__search-results-pagination"><button class="jetpack-instant-search__scroll-button"><span>Load more</span></button></div></div><div class="jetpack-instant-search__search-results-secondary  "><div class="jetpack-instant-search__sidebar"><div class="jetpack-instant-search__search-filters"><div class="jetpack-instant-search__search-filters-title">Filter options</div></div><div class="jetpack-instant-search__widget-area-container"><div class="jetpack-instant-search__widget-area" style="">
+<div id="media_image-3" class="widget widget_media_image"><a href="https://jetpack.com/upgrade/search/?aff=8638"><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/Jetpack-Search-on-CSS-Tricks-Instant-Search_003.webp" class="image wp-image-321694 attachment-full size-full jetpack-lazy-image jetpack-lazy-image--handled" alt="" loading="eager" style="max-width: 100%; height: auto;" srcset="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/Jetpack-Search-on-CSS-Tricks-Instant-Search_002.webp 600w, Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/Jetpack-Search-on-CSS-Tricks-Instant-Search.webp 300w" data-lazy-loaded="1" sizes="(min-width: 735px) 864px, 96vw" width="600" height="444"></a></div><div id="jetpack-search-filters-5" class="widget jetpack-filters widget_search"> <div id="jetpack-search-filters-5-wrapper" class="jetpack-instant-search-wrapper">
+<div id="jetpack-search-filters-5-portaled-wrapper" class="jetpack-instant-search__portaled-wrapper"><div class="jetpack-instant-search__search-filters"><div><h4 class="jetpack-instant-search__search-filter-sub-heading">Post Types</h4><div><div class="jetpack-instant-search__search-filter-list jetpack-instant-search__search-static-filter-list"></div><div class="jetpack-instant-search__search-filter-list"><div><input id="jetpack-instant-search__search-filter-2-post-types-post" name="post" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-2-post-types-post" class="jetpack-instant-search__search-filter-list-label">Post (6102)</label></div><div><input id="jetpack-instant-search__search-filter-2-post-types-page" name="page" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-2-post-types-page" class="jetpack-instant-search__search-filter-list-label">Page (1574)</label></div><div><input id="jetpack-instant-search__search-filter-2-post-types-newsletters" name="newsletters" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-2-post-types-newsletters" class="jetpack-instant-search__search-filter-list-label">Newsletter (286)</label></div><div><input id="jetpack-instant-search__search-filter-2-post-types-chapters" name="chapters" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-2-post-types-chapters" class="jetpack-instant-search__search-filter-list-label">Chapter (20)</label></div></div></div></div><div><h4 class="jetpack-instant-search__search-filter-sub-heading">Year</h4><div><div class="jetpack-instant-search__search-filter-list jetpack-instant-search__search-static-filter-list"></div><div class="jetpack-instant-search__search-filter-list"><div><input id="jetpack-instant-search__search-filter-3-dates-year_post_date-2022-01-01 00:00:00" name="2022-01-01 00:00:00" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-3-dates-year_post_date-2022-01-01 00:00:00" class="jetpack-instant-search__search-filter-list-label">2022 (47)</label></div></div></div></div><div><h4 class="jetpack-instant-search__search-filter-sub-heading">Tags</h4><div><div class="jetpack-instant-search__search-filter-list jetpack-instant-search__search-static-filter-list"></div><div class="jetpack-instant-search__search-filter-list"><div><input id="jetpack-instant-search__search-filter-4-taxonomies-svg" name="svg" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-4-taxonomies-svg" class="jetpack-instant-search__search-filter-list-label">SVG (200)</label></div><div><input id="jetpack-instant-search__search-filter-4-taxonomies-accessibility" name="accessibility" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-4-taxonomies-accessibility" class="jetpack-instant-search__search-filter-list-label">accessibility (156)</label></div><div><input id="jetpack-instant-search__search-filter-4-taxonomies-performance" name="performance" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-4-taxonomies-performance" class="jetpack-instant-search__search-filter-list-label">performance (153)</label></div><div><input id="jetpack-instant-search__search-filter-4-taxonomies-react" name="react" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-4-taxonomies-react" class="jetpack-instant-search__search-filter-list-label">react (146)</label></div><div><input id="jetpack-instant-search__search-filter-4-taxonomies-javascript" name="javascript" type="checkbox" class="jetpack-instant-search__search-filter-list-input"><label for="jetpack-instant-search__search-filter-4-taxonomies-javascript" class="jetpack-instant-search__search-filter-list-label">JavaScript (144)</label></div></div></div></div></div></div></div></div> </div></div><div class="jetpack-instant-search__jetpack-colophon"><a href="https://jetpack.com/search?utm_source=poweredby" rel="external noopener noreferrer nofollow" target="_blank" class="jetpack-instant-search__jetpack-colophon-link"><svg class="jetpack-instant-search__jetpack-colophon-logo" height="12" width="12" viewBox="0 0 32 32"><path class="jetpack-logo__icon-circle" fill="#069e08" d="M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16s16-7.2,16-16S24.8,0,16,0z"></path><polygon class="jetpack-logo__icon-triangle" fill="#fff" points="15,19 7,19 15,3 "></polygon><polygon class="jetpack-logo__icon-triangle" fill="#fff" points="17,29 17,13 25,13 "></polygon></svg><span class="jetpack-instant-search__jetpack-colophon-text">Search powered by Jetpack</span></a></div></div></div></div></div></div><script src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/carbon.js" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42JWCVADPKJYCYSLYKQNCE7DL2JICT7I5Z3JCYBD65QUCAYIK27KFT7I4KJECABD62Q7CASDKKJICVY4YKQNCE7DEKJUCYYDTZDK2HUCN?segment=placement:csstrickscom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="Box%20Sizing%20CSS-Tricks%20-%20CSS-Tricks_files/1550855401-cc_light.png" alt="ads via Carbon" style="max-width: 130px;" width="130" height="100" border="0"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42JWCVADPKJYCYSLYKQNCE7DL2JICT7I5Z3JCYBD65QUCAYIK27KFT7I4KJECABD62Q7CASDKKJICVY4YKQNCE7DEKJUCYYDTZDK2HUCN?segment=placement:csstrickscom;" class="carbon-text" target="_blank" rel="noopener sponsored">Students and Teachers, save up to 60% on Adobe Creative Cloud.</a></span><a href="http://carbonads.net/?utm_source=csstrickscom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div></body></html>
